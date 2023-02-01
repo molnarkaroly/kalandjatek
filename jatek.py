@@ -1,0 +1,14 @@
+import random
+import keyboard
+
+class Tomó(self, name, ügyesség, életerő, szerencse, depresszio, inventory, arany, liquid, csillogo, kaja):
+    self.name = name
+    self.ügyesség = DoboKocka += 6
+    self.életerő = DoboKocka += DoboKocka += 12
+    self.szerencse = DoboKocka += 6
+    self.depresszio = 0
+    self.inventory = 'Vaskard', 'Bőrvért'
+    self.arany = Arany
+    self.liquid = Potion
+    self.csillogo = Ekkovek
+    self.kaja = Kaja
