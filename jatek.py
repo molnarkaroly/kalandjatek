@@ -3,7 +3,8 @@ import keyboard
 
 
 
-def dobokocka():
-    return print(random.randint(1,6))
+class DoboKocka(self):
+    def dobokocka():
+        return print(random.randint(1,6))
 
 
