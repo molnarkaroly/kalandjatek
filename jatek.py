@@ -1,6 +1,10 @@
 import random
 import keyboard
 
+class DoboKocka:
+    def dobokocka():
+        return print(random.randint(1,6))
+
 class Tomó(self, name, ügyesség, életerő, szerencse, depresszio, inventory, arany, liquid, csillogo, kaja):
     self.name = name
     self.ügyesség = DoboKocka += 6
