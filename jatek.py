@@ -16,3 +16,9 @@ class Tomó(self, name, ügyesség, életerő, szerencse, depresszio, inventory,
     self.liquid = Potion
     self.csillogo = Ekkovek
     self.kaja = Kaja
+
+class Enemy(self, name, ügyesség, életerő):
+    self.name = name
+    self.ügyesség = DoboKocka += DoboKocka x
+    self.életerő = DoboKocka += DoboKocka += y
+    
