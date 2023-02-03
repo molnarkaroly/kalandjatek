@@ -19,6 +19,5 @@ class Tomó(self, name, ügyesség, életerő, szerencse, depresszio, inventory,
 
 class Enemy(self, name, ügyesség, életerő):
     self.name = name
-    self.ügyesség = DoboKocka += DoboKocka x
+    self.ügyesség = DoboKocka += DoboKocka += x
     self.életerő = DoboKocka += DoboKocka += y
-    
