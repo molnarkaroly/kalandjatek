@@ -1,0 +1,489 @@
+[
+    {
+    "cím" : "Az ítélet labirintusa",
+    "bevezető" : "Az Osztriga öböl egy nagy osztriga volt nen tom ",
+    "ugrás" : [1]
+    },
+    {
+        "szint" : 1,
+        "szöveg" : "Belöknek a lenti alagútba, és rád zárják az ajtót, kizárva ezzel a nyíláson át beszűrődő természetes világosságot. Innentől kezdve kizárólag a falra rögzített fäklyáktól remél- hetsz valamennyi fényt. Ahogy szemed hozzászokik a homályhoz, látod, hogy az alagút észak felé indul. Nagyot sóhajtasz a dolog igazságtalansága felett, majd elindulsz abba az irányba. Lapozz a 41-re.",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 2,
+        "szöveg" : "A vizhe ugrasz, az áramlat azonban nagyon eros. Megpróbálsz a felszinen maradni, de ez nem könnyű. Lapozz a 148-ra",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 3,
+        "szöveg" : "Ahogy óvatosan a drótok között lépkedve eléred a Szobrot, az hirtelen eltünk! A következő pillanatban vészjósló morajlás hangzik fel a fejed fölött, és ahogy arra nézel, látod, hogy hatalmas szikladarabok kezdenek feléd zuhanni. A hatalmas súly porrá örli csontjaidat. Kalandod itt véget ér.",
+        "akció" : {
+            "halál" : "vége"
+        }
+    },
+    {
+        "szint" : 4,
+        "szöveg" : "A kötél igen rossz állapotban van, és még félúton sem jársz, mikor elszakad... Kalandod itt véget ér.",
+        "akció" : {
+            "halál" : "vége"
+        }
+    },
+    {
+        "szint" : 5,
+        "szöveg" : "Az ajtó egy tágas terembe nyílik, melynek északi oldalán egy újabb kijárat van, egy lelógó kötél szomszédságában. Csapdának nem látod jelét, így áthaladsz a szobán és leveszed a kötelet. Lenyomod a kilincset, de igy sem sikerül előrébb jutnod alighanem zárva van. Ha nincs nálad egy Aranykules távozol a szobából és folytatod az utadat északi irányba.",
+        "akció" : {
+            "inventory" : "Aranykulcs", "ugrás" : [110],
+            "ugrás" : [14]
+        }
+    },
+    {
+        "szint" : 6,
+        "szöveg" : "Az ajtó egy nyugat felé haladó alagútba nyilik. Követed, mig egy elágazáshoz nem érsz.",
+        "válaszút" : {
+            "opció 1" : "Észak felé haladsz tovább : [1]",
+            "opció 2" : "Maradsz ezen az úton : [2]",
+            "ugrás" : [172 , 168]
+        }
+    },
+    {
+        "szint" : 7,
+        "szöveg" : "Mikor végül eléred a verem alját, semmit nem látsz. A falakat végigtapogatva annyit meg tudsz állapítani, hogy az alagút kelet felé megy tovább. Ha a vaksötét ellenére is bevállalod ezt a járatot. Ha inkább visszatérnél a fenti folyosóra és északnak folytatnád az utad, lapozz a 96-ra.",
+        "válaszút" : {
+            "opció 1" : "Haladsz tovább : [1]",
+            "opció 2" : "Vissza mész és haladsz tovább Északnak : [2]",
+            "ugrás" : [165 , 96]
+        }
+    },
+    {
+        "szint" : 8,
+        "szöveg" : "A dárdák, melyeket egy igen hatásos méreggel kentek be, mélyen a lábadba füródnak. Dobj egy kockával, hogy megtudd, hány ELETERO pontot vesztettél.",
+        "akció" : {
+            "ugrás" : [65]
+        }
+    },
+    {
+        "szint" : 9,
+        "szöveg" : "Elsietsz a halott fenevad teteme mellett és gyorsan az északi járathoz lépsz.",
+        "akció" : {
+            "ugrás" : [52]
+        }
+    },
+    {
+        "szint" : 10,
+        "szöveg" : "Az ajtó recsegve nyilik ki és fed fel egy helyiséget, mely alig szélesebb a folyosónál. Hosszában két részre van osztva. Az egyik oldalon egy cellát látsz, míg a másik egyenesen egy ajtóhoz tart az északi falon. A fogdában egy rongyos férfi áll, aki meredton néz téged és fenyegető mozdulatokat tesz irányodba. Gyanítod, hogy szabadságáért cserébe esetleg hasznos információkkal tuda szolgálni számodra.",
+        "válaszút" : {
+            "opció 1" : "Beszélsz a férfival : [1]",
+            "opció 2" : "Átnyúlsz a rácson és megölöd [2]",
+            "ugrás" : [149 , 24]
+        }
+    },
+    {
+        "szint" : 11,
+        "szöveg" : "Elérsz az alagút végére, de semmi feltünőt nem látsz.",
+        "válaszút" : {
+            "opció 1" : "Ha keresgélni szeretnél : [1]",
+            "opció 2" : "Ha vissza szeretnél térni és elmenni inkább Keletre : [2]",
+            "ugrás" : [38 , 31]
+        }
+    },
+    {
+        "szint" : 12,
+        "szöveg" : "A válladra csapod a köpenyt. de legnagyobb meglepetésedre semmi nem történik. Mivel egy kicsit azért hűvös van, nem dobod le. Bár nem tudod, de ez a Lebegés Köpenye.",
+        "válaszút" : {
+            "opció 1" : "Ha fel szeretnéd próbálni a gyűrűt és még nem tetted meg : [1]",
+            "opció 2" : "Ha még van folyadék az üvegben és most felhajtanád : [2]",
+            "opció 3" : "Ha bezárnád a csapóajtót és Észak felé távoznál : [3]",
+            "ugrás" : [119 , 71 , 80]
+        }
+    },
+    {
+        "szint" : 13,
+        "szöveg" : "A zárba helyezed a kulcsot, de az sajnos nem illik bele, igy nincs más választásod minthogy megpróbáld betörni.",
+        "akció" : {
+            "ugrás" : [196]
+        }
+    },
+    {
+        "szint" : 14,
+        "szöveg" : "Ahogy Észak felé haladsz. Nyugatról egy alagutat látsz befutni. Úgy döntesz, inkább egyenesen mész tovább.",
+        "akció" : {
+            "ugrás" : [67]
+        }
+    },
+    {
+        "szint" : 15,
+        "szöveg" : "Az áramlat túl erős, és tovább sodor egy híd alá. Magad elött megpillantasz egy sziklát, és megpróbálod elkapni. Tedd próbára SZERENCSÉD!",
+        "akció" : {
+            "szerencse" : "Ha szerencséd van elkapod", "ugrás" : [92],
+            "ugrás" : [132]
+        }
+    },
+    {
+        "szint" : 16,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 17,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 18,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 19,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 20,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 21,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 22,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 23,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 24,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 25,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 26,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 27,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 28,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 29,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 30,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 31,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 32,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 33,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 34,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 35,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 36,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 37,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 38,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 39,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 40,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 41,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 42,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 43,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 44,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 45,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 46,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 47,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 48,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 49,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 50,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 51,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 52,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 53,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 54,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 55,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 56,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 57,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 58,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 59,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 60,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 61,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 62,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 63,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 64,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 65,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 66,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+    {
+        "szint" : 67,
+        "szöveg" : "Belöknek",
+        "akció" : {
+            "ugrás" : [41]
+        }
+    },
+]
