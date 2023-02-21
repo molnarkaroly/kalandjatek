@@ -10,14 +10,20 @@ from time import *
 
 sor = 0
 
+szöveg = 1
 
+while True:
+    if keyboard.is_pressed('a'):
+        szöveg += 1
+        
 
 
 def update():
 
-    szöveg_label.config(text="szöveg")
+    szöveg_label.config()
 
  
+
 
     root.after(1000,update)
 
@@ -37,9 +43,11 @@ def close(event):
 root.bind('<Escape>', close)
 
 
-szöveg_label = Label(root, text="szöveg", font=("Diediedie",45),fg="black", bg="green")
+szöveg_label = Label(root, text=szöveg, font=("Diediedie",45),fg="black", bg="green")
 szöveg_label.pack()
+
 
 
 # Ablak megnyitása
 root.mainloop()
+
