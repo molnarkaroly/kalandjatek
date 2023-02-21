@@ -39,8 +39,8 @@
         "szint" : 5,
         "szöveg" : "Az ajtó egy tágas terembe nyílik, melynek északi oldalán egy újabb kijárat van, egy lelógó kötél szomszédságában. Csapdának nem látod jelét, így áthaladsz a szobán és leveszed a kötelet. Lenyomod a kilincset, de igy sem sikerül előrébb jutnod alighanem zárva van. Ha nincs nálad egy Aranykules távozol a szobából és folytatod az utadat északi irányba.",
         "akció" : {
-            "inventory" : "Aranykulcs", "ugrás" : [110],
-            "ugrás" : [14]
+            "inventory" : "Aranykulcs",
+            "ugrás" : [110, 14]
         }
     },
     {
@@ -121,8 +121,8 @@
         "szint" : 15,
         "szöveg" : "Az áramlat túl erős, és tovább sodor egy híd alá. Magad elött megpillantasz egy sziklát, és megpróbálod elkapni. Tedd próbára SZERENCSÉD!",
         "akció" : {
-            "szerencse" : "Ha szerencséd van elkapod", "ugrás" : [92],
-            "ugrás" : [132]
+            "szerencse" : "Ha szerencséd van elkapod", 
+            "ugrás" : [92, 132]
         }
     },
     {
