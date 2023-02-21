@@ -6,24 +6,18 @@ from re import A
 from tkinter import *
 from tkinter import ttk
 from tkinter import colorchooser
-from time import *
 
 sor = 0
 
-szöveg = 1
 
-while True:
-    if keyboard.is_pressed('a'):
-        szöveg += 1
-        
+
+
 
 
 def update():
 
     szöveg_label.config()
-
- 
-
+    szöveg_label.text()
 
     root.after(1000,update)
 
@@ -42,9 +36,14 @@ def close(event):
 # ESC billentyű lenyomásának kezelése
 root.bind('<Escape>', close)
 
+szöveg = 5
 
 szöveg_label = Label(root, text=szöveg, font=("Diediedie",45),fg="black", bg="green")
 szöveg_label.pack()
+    
+
+a_button = tk.Button(root, text="ZGrés ", )
+a_button.pack()
 
 
 
