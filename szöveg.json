@@ -18,7 +18,7 @@
         "szint" : 2,
         "szöveg" : "A vizhe ugrasz, az áramlat azonban nagyon eros. Megpróbálsz a felszinen maradni, de ez nem könnyű. Lapozz a 148-ra",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [148]
         }
     },
     {
@@ -46,25 +46,31 @@
     {
         "szint" : 6,
         "szöveg" : "Az ajtó egy nyugat felé haladó alagútba nyilik. Követed, mig egy elágazáshoz nem érsz.",
-        "válaszút" : {
-            "opció 1" : "Észak felé haladsz tovább : [1]",
-            "opció 2" : "Maradsz ezen az úton : [2]",
-            "ugrás" : [172 , 168]
+        "akció" : {
+            "válaszút" : {
+                "opció 1" : "Észak felé haladsz tovább : [1]",
+                "opció 2" : "Maradsz ezen az úton : [2]",
+                "ugrás" : [172 , 168]
+            }
+
         }
     },
     {
         "szint" : 7,
         "szöveg" : "Mikor végül eléred a verem alját, semmit nem látsz. A falakat végigtapogatva annyit meg tudsz állapítani, hogy az alagút kelet felé megy tovább. Ha a vaksötét ellenére is bevállalod ezt a járatot. Ha inkább visszatérnél a fenti folyosóra és északnak folytatnád az utad, lapozz a 96-ra.",
-        "válaszút" : {
-            "opció 1" : "Haladsz tovább : [1]",
-            "opció 2" : "Vissza mész és haladsz tovább Északnak : [2]",
-            "ugrás" : [165 , 96]
+        "akció" : {
+            "válaszút" : {
+                "opció 1" : "Haladsz tovább : [1]",
+                "opció 2" : "Vissza mész és haladsz tovább Északnak : [2]",
+                "ugrás" : [165 , 96]
+            } 
         }
     },
     {
         "szint" : 8,
         "szöveg" : "A dárdák, melyeket egy igen hatásos méreggel kentek be, mélyen a lábadba füródnak. Dobj egy kockával, hogy megtudd, hány ELETERO pontot vesztettél.",
         "akció" : {
+            "DoboKocka" : "Hány Életerőt vesztessz?",
             "ugrás" : [65]
         }
     },
@@ -78,29 +84,35 @@
     {
         "szint" : 10,
         "szöveg" : "Az ajtó recsegve nyilik ki és fed fel egy helyiséget, mely alig szélesebb a folyosónál. Hosszában két részre van osztva. Az egyik oldalon egy cellát látsz, míg a másik egyenesen egy ajtóhoz tart az északi falon. A fogdában egy rongyos férfi áll, aki meredton néz téged és fenyegető mozdulatokat tesz irányodba. Gyanítod, hogy szabadságáért cserébe esetleg hasznos információkkal tuda szolgálni számodra.",
-        "válaszút" : {
-            "opció 1" : "Beszélsz a férfival : [1]",
-            "opció 2" : "Átnyúlsz a rácson és megölöd [2]",
-            "ugrás" : [149 , 24]
+        "akció" : {
+            "válaszút" : {
+                "opció 1" : "Beszélsz a férfival : [1]",
+                "opció 2" : "Átnyúlsz a rácson és megölöd [2]",
+                "ugrás" : [149 , 24]
+            }
         }
     },
     {
         "szint" : 11,
         "szöveg" : "Elérsz az alagút végére, de semmi feltünőt nem látsz.",
-        "válaszút" : {
-            "opció 1" : "Ha keresgélni szeretnél : [1]",
-            "opció 2" : "Ha vissza szeretnél térni és elmenni inkább Keletre : [2]",
-            "ugrás" : [38 , 31]
+        "akció" : {
+            "válaszút" : {
+                "opció 1" : "Ha keresgélni szeretnél : [1]",
+                "opció 2" : "Ha vissza szeretnél térni és elmenni inkább Keletre : [2]",
+                "ugrás" : [38 , 31]
+            }
         }
     },
     {
         "szint" : 12,
         "szöveg" : "A válladra csapod a köpenyt. de legnagyobb meglepetésedre semmi nem történik. Mivel egy kicsit azért hűvös van, nem dobod le. Bár nem tudod, de ez a Lebegés Köpenye.",
-        "válaszút" : {
-            "opció 1" : "Ha fel szeretnéd próbálni a gyűrűt és még nem tetted meg : [1]",
-            "opció 2" : "Ha még van folyadék az üvegben és most felhajtanád : [2]",
-            "opció 3" : "Ha bezárnád a csapóajtót és Észak felé távoznál : [3]",
-            "ugrás" : [119 , 71 , 80]
+        "akció" : {
+            "válaszút" : {
+                "opció 1" : "Ha fel szeretnéd próbálni a gyűrűt és még nem tetted meg : [1]",
+                "opció 2" : "Ha még van folyadék az üvegben és most felhajtanád : [2]",
+                "opció 3" : "Ha bezárnád a csapóajtót és Észak felé távoznál : [3]",
+                "ugrás" : [119 , 71 , 80]
+            }
         }
     },
     {
@@ -121,7 +133,7 @@
         "szint" : 15,
         "szöveg" : "Az áramlat túl erős, és tovább sodor egy híd alá. Magad elött megpillantasz egy sziklát, és megpróbálod elkapni. Tedd próbára SZERENCSÉD!",
         "akció" : {
-            "szerencse" : "Ha szerencséd van elkapod", 
+            "probaszerencse" : "Ha szerencséd van elkapod", 
             "ugrás" : [92, 132]
         }
     },
@@ -142,138 +154,158 @@
     {
         "szint" : 18,
         "szöveg" : "Amint belépsz a szobába, rémülten eszmélsz rá, hogy előbb alaposan szét kellett volna, nézned a plafonon ugyanis egy hatalmas Pók kapaszkodik, ami minden szemével téged bámul. Négy ezüstszínű gubó lóg mellette, és összeszorul, a szíved mikor rájössz, hogy két ember, egy Törpe és egy Elf van beléjük csavarva, akik bizonyára leendő ellenfeled legutóbbi áldozatai voltak, és már csak arra várnak, hogy a bestia egy jót lakmározzon belőlük. A pók némán a padlóra pottyan, csáprágói mohón feléd nyúlnak",
-        "Óriáspók",
-        "ÜGYESSÉG 9",
-        "ÉLETERŐ 5",
-        "Ha végzel ezzel a teremtménnyel, lapozz a 94-re. Ha nem, hamarosan te is személyre szőtt selyemkabátot fogsz kapni.",
         "akció" : {
-            "ugrás" : [41]
+            "harc" : "Óriáspók Ügyesség-9 Életerő-5",
+            "if nyertél = True" : [94],
+            "else" : "halál" 
         }
     },
     {
         "szint" : 19,
-        "szöveg" : "Igyekezeted, hogy szilárd talajra juss, hiába- valónak tűnik, ám teszel még egy utolsó. kétségbeesett próbálkozást: a kijárat felé veted magad. Tedd próbára SZERENCSÉD! Ha szerencséd van. lapozz a 176-ra. Ha nincs, lapozz a 151-re.",
+        "szöveg" : "Igyekezeted, hogy szilárd talajra juss, hiába- valónak tűnik, ám teszel még egy utolsó. kétségbeesett próbálkozást: a kijárat felé veted magad.",
         "akció" : {
-            "ugrás" : [41]
+            "probaszerencse" : "Ha szerencséd van elkapod",
+            "ugrás" : [176, 151]
         }
     },
     {
         "szint" : 20,
         "szöveg" : "Az alagút egy súlyos ajtóban ér véget, ami le van zárva. De nem kulccsal: három tekerő gombot látsz rajta. Ha ismered a kinyitásához szükséges kombinációt, add össze a számokat, és lapozz az így kapott fejezetpontra. Ha nem tudod. vissza kell térned a homokos folyópartra és valahol máshol kell próbálkoznod, lapozz a 76-ra.",
         "akció" : {
-            "ugrás" : [41]
+            "inventory" : "Kombináció",
+            "ugrás" : ["add össze öket ...", 76]
         }
     },
     {
         "szint" : 21,
         "szöveg" : "A számszeríj beállítása pontos volt, esélyed sincs. A lövedék mélyen a nyakadba fúródik, átmetszi a gerincvelődet és a falhoz szegezi ernyedt testedet. Kalandod itt véget ér.",
         "akció" : {
-            "ugrás" : [41]
+            "halál" : "vége"
         }
     },
     {
         "szint" : 22,
         "szöveg" : "Az ajtó egy kis terembe nyílik. Egyik sarkában, egy kosárban egy hatalmas, kutyaszerű teremtmény hever. A szemben lévő falon egy ajtót látsz, mely mellett szögre akasztva egy Bronz Kulcs lóg hívogatóan Ha megpróbálsz csendben átlopózni a helyiségen, lapozz, a 81-re. Ha semmiképp nem akarod felkelteni a kutyát, és az ajtó becsukása után inkább visszatérnél az elágazáshoz, hogy észak felé folytasd az utad, lapozz a 108-ra.",
         "akció" : {
-            "ugrás" : [41]
+            "válaszút" : {
+                "opció 1" : "Megpróbálsz csendben elmenni a kutya mellett [1]",
+                "opció 2" : "Inkább visszafordulsz, és Észak felé haladsz tovább[2]",
+                "ugrás" : [81, 108]
+            }
         }
     },
     {
         "szint" : 23,
         "szöveg" : "Köpenyed hirtelen megremeg, és felfúvódik, mintha levegővel telne, meg Legnagyobb meglepetésedre elemelkedsz a talajtól. Óvatosan előre lebegsz, majd lágyan leereszkedsz a talajra, a sziklafal lába elé. Amint földet érsz. köpenyed leereszkedik. És ismét úgy csüng le rólad, mint bármelyik közönséges ruhadarab. Lapozz a 27-re",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [27]
         }
     },
     {
         "szint" : 24,
         "szöveg" : "Kardoddal átnyúlsz a rácsokon, a férfi pedig rémülten ugrik hátra. Újra megpróbálod ezt. Azonban nagyobb erővel. Eltalálod a torkát. a sebből bíborvörös vér folyik végig fegyvereden, egyenesen a kezedre. Értetlenül néz rád, majd ülő helyzetbe roskad a padlóra. Ahogy feje előre esik, visszahúzod a fegyvered és megtisztítod véres kezed. Úgy döntesz, északi irányba folytatod az utad, úgyhogy az ajtón át távozol. Lapozz a 72-re.",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [72]
         }
     },
     {
         "szint" : 25,
         "szöveg" : "Sikerül gond nélkül elérned a túloldalt, majd sietve távozol az északi nyíláson át. Lapozz az 52-re",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [52]
         }
     },
     {
         "szint" : 26,
         "szöveg" : "Vagy száz Elf áll körülötted, megfeszített nyílvesszőkkel, melyek feléd mutatnak. A halott Főnök fia előre lép és az idős férfire néz, aki alig észrevehetően megrázza a fejét. Az Elf komoran elmosolyodik. Bűnös! Jelenti ki. Az utolsó dolog, amit hallasz, az a feléd suhanó nyílvesszők zaja. Kalandod itt véget ér.",
         "akció" : {
-            "ugrás" : [41]
+            "halál" : "vége"
         }
     },
     {
         "szint" : 27,
         "szöveg" : "Egy hatalmas völgy lábánál állsz, melyet egy gyors folyású folyó vájt ki. Próbálsz valami megoldást találni az átkelésre, de csak egy kicsi, eléggé rozoga és korhadt hidat látsz. Ahogy megközelíted, látod. amint két óriási termesz eszi a fát. Hófehér testükön igen nyugtalanítóan hat két vérvörös szemük. A lények bármelyike bármikor beléd marhatna. Ha sietsz talán még sikerül átkelned rajta azelőtt, hogy végleg összeroskadna. A másik lehetőséged, hogy megpróbálsz átúszni a sebes folyón. Ha az első megoldást választod, lapozz a 40-re. Ha úgy gondolod, elég jó úszó vagy. ezzel próbálkoznál, lapozz a 2-re.",
         "akció" : {
-            "ugrás" : [41]
+            "válaszút" : {
+                "opció 1" : "Megpróbálsz átfutni a hídon [1]",
+                "opció 2" : "Megpróbálsz átúszni [2]",
+                "ugrás" : [40, 2]
+            }
         }
     },
     {
         "szint" : 28,
         "szöveg" : "Egy idő után újabb elágazásba botlasz. A déli ágról úgy véled, az visszafelé vezetne. ezért északnak indulsz. Lapozz a 67-re.",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [67]
         }
     },
     {
         "szint" : 29,
         "szöveg" : "A járat, amiben most haladsz, egy észak-dél irányú. másik folyosóba torkollik bele. Úgy döntesz. balra fordulva haladsz tovább. Lapozz a 69-re.",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [69]
         }
     },
     {
         "szint" : 30,
         "szöveg" : "A járat nyugati irányba indul, ám hamarosan északnak fordul. Végül elérsz egy ajtóig mely a keleti falban áll. Ha be akarsz nyitni rajta, lapozz a 124-re. Ha a folyosón folytatnád az utad. lapozza 129-re.",
         "akció" : {
-            "ugrás" : [41]
+            "válaszút" : {
+                "opció 1" : "Benyitsz az ajtón [1]",
+                "opció 2" : "Inkább tovább mész [2]",
+                "ugrás" : [124, 129]
+            }
         }
     },
     {
         "szint" : 31,
         "szöveg" : "Végigsétálsz a járaton, mely elágazásban végződik. A déli folyosó visszafelé vezetne, úgyhogy északnak indulsz. Lapozz a 99-re.",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [99]
         }
     },
     {
         "szint" : 32,
         "szöveg" : "Úgy döntesz, késlekedés nélkül elhagyod a szobát, így bezárod magad mögött az ajtót és keletnek indulsz. Lapoz a 16-ra.",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [16]
         }
     },
     {
         "szint" : 33,
         "szöveg" : "Az alagút egy ideig kanyarog, de végig észak felé megy. Hamarosan egy ajtó jelenik meg a jobb oldali falban. Ha megnézed. nyitva van-e. Lapozz, az 5-re. Ha inkább hagynád az ajtót és tovább folytatnád az utadat. lapozz a 14-re.",
         "akció" : {
-            "ugrás" : [41]
+            "válaszút" : {
+                "opció 1" : "MEgnézed nyitva van-e [1]",
+                "opció 2" : "folytatod az utad [2]",
+                "ugrás" : [5, 14]
+            }
         }
     },
     {
         "szint" : 34,
         "szöveg" : "A fiola erős mentaillatot áraszt magából. Ha meg akarod inni, lapozz a 102-re. Ha inkább hagyod, ahol van. lapozz a 169-re.",
         "akció" : {
-            "ugrás" : [41]
+            "válaszút" : {
+                "opció 1" : "Meg akarod inni [1]",
+                "opció 2" : "Inkább ott hagyod [2]",
+                "ugrás" : [102, 169]
+            }
         }
     },
     {
         "szint" : 35,
         "szöveg" : "Kétségbeesetten kaparod a falat, de képtelen vagy megakadályozni, hogy a tűz kellős közepébe ne zuhanj. Ahogy a csúszda végéhez közeledsz, már a láng pattanásait is hallod, és megpillantod a pokoli lángnyelveket. Lendületed miatt egy ideig még a levegőben repülsz utána azonban, ahogy fejjel előre a tűzbe zuhansz, a szörnyű meleg egy pillanat alatt füstpamaccsá változtat. Kalandod itt véget ér.",
         "akció" : {
-            "ugrás" : [41]
+            "halál" : "vége"
         }
     },
     {
         "szint" : 36,
         "szöveg" : "Semmit nem találsz. így északra folytatod az utad. Lapozz a 98-ra.",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [98]
         }
     },
     {
