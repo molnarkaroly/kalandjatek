@@ -25,7 +25,6 @@ class Application(tk.Frame):
     def count_a(self):
         lista[e] = self.a_count
         self.a_count = lista[e + x]
-        x += 1
         self.a_label.config(text="A: {}".format(self.a_count))
 
 
