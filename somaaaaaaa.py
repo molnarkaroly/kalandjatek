@@ -3,7 +3,7 @@ lista = ["alma", "alpaka", "albatrosz",]
 
 def hide_button_1():
     button1.pack_forget()
-    label.config(text= lista[0])
+    label.config(text= lista[0], font=("diediedie", 20))
 
 def hide_button_2():
     button2.pack_forget()
@@ -28,8 +28,10 @@ if szint == 3:
     utak =[1]    
 
 root = tk.Tk()
-root.geometry("200x200")
-root.resizable(False, False)
+root.geometry("800x400")
+#root.resizable(False, False)
+root.configure(background="#261401")
+
 
 
 label = tk.Label(root, text="")
@@ -38,7 +40,7 @@ label.pack(pady=5)
 if len(utak) == 1:
     button1 = tk.Button(root, text= utak[0], command=hide_button_1)
     szint = utak[0]
-    button1.pack(pady=10)
+    button1.pack(pady=50)
     
 
 
@@ -46,25 +48,25 @@ if len(utak) == 1:
 if len(utak) == 2:
     button1 = tk.Button(root, text=utak[0], command=hide_button_1)
     szint = utak[0]
-    button1.pack(pady=10)
+    button1.pack(pady=50)
 
     button2 = tk.Button(root, text=utak[1], command=hide_button_2)
     szint = utak[1]
-    button2.pack(pady=10)
+    button2.pack(pady=50)
 
 
 if len(utak) == 3:
     button1 = tk.Button(root, text=utak[0], command=hide_button_1)
     szint = utak[0]
-    button1.pack(pady=10)
+    button1.pack(pady=50)
 
     button2 = tk.Button(root, text=utak[1], command=hide_button_2)
     szint = utak[1]
-    button2.pack(pady=10)
+    button2.pack(pady=50)
 
     button3 = tk.Button(root, text=utak[2], command=hide_button_3)
     szint = utak[2]
-    button3.pack(pady=10)
+    button3.pack(pady=50)
 
 
 
