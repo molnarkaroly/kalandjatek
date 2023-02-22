@@ -23,7 +23,7 @@ def update():
 
 root = tk.Tk()
 root.title('Kaland játék')
-root.configure(background="#120b0b")
+root.configure(background="#3d2102")
 
 # Teljes képernyős mód beállítása
 root.attributes('-fullscreen', True)
@@ -38,7 +38,7 @@ root.bind('<Escape>', close)
 
 szöveg = 5
 
-szöveg_label = Label(root, text=szöveg, font=("Diediedie",45),fg="black", bg="green")
+szöveg_label = Label(root, text=szöveg, font=("Diediedie",45),fg="#3d2102", bg="green")
 szöveg_label.pack()
     
 

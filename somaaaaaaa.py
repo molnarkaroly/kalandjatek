@@ -1,28 +1,36 @@
 import tkinter as tk
+lista = ["alma", "alpaka", "albatrosz",]
 
 def hide_button_1():
     button1.pack_forget()
-    valtozo = 0
-    label.config(text="Hello, World!")
+    label.config(text= lista[0])
 
 def hide_button_2():
     button2.pack_forget()
-    valtozo = 1
-    label.config(text="Hello, school!")
+    label.config(text=lista[1])
 
 def hide_button_3():
     button3.pack_forget()
-    valtozo = 1
-    label.config(text="Hello, your mom!")
+    label.config(text=lista[2])
 
-utak = [10,12,13]
+utak = [1,2,3]
 
-szint= 1
+szint= 0
 
+if szint == 0:
+    utak =[1,2,3]
+ 
 
+if szint == 1:
+    utak =[2,3]
+
+if szint == 3:
+    utak =[1]    
 
 root = tk.Tk()
 root.geometry("200x200")
+root.resizable(False, False)
+
 
 label = tk.Label(root, text="")
 label.pack(pady=5)
@@ -31,6 +39,9 @@ if len(utak) == 1:
     button1 = tk.Button(root, text= utak[0], command=hide_button_1)
     szint = utak[0]
     button1.pack(pady=10)
+    
+
+
 
 if len(utak) == 2:
     button1 = tk.Button(root, text=utak[0], command=hide_button_1)
@@ -40,6 +51,7 @@ if len(utak) == 2:
     button2 = tk.Button(root, text=utak[1], command=hide_button_2)
     szint = utak[1]
     button2.pack(pady=10)
+
 
 if len(utak) == 3:
     button1 = tk.Button(root, text=utak[0], command=hide_button_1)
