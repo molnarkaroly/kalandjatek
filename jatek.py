@@ -8,7 +8,7 @@ def DoboKocka():
     return dobas
 
 ugras= []
-
+probaszerencsee = False
 class Tomó:
     def __init__(self, nev, ugyesseg, eletero, szerencse, depresszio, inventory, arany, liquid, csillogo, kaja):
         self.nev = nev
@@ -36,6 +36,14 @@ class Tomó:
                 print(f"{enemy.name} nyert játékod is véget ért")
                 szoveg = (f"{enemy.name} nyert játékod is véget ért")
                 break
+
+    def probaszerencse(self, szerencse):
+        if DoboKocka() + DoboKocka() <= self.szerencse:
+            probaszerencsee = True
+            self.szerencse -= 1
+        else:
+            probaszerencsee = False
+            self.szerencse -= 1
 
 class Enemy:
     def __init__(self, nev, ugyesseg):
