@@ -66,8 +66,8 @@ class Enemy:
 
 tomó= Harcos("Tomó")
 
-if kartya["akcio"["tipus"]]== "harc":
-    tomó.harcol(kartya["ellenfel"])
+if kartyak["akcio"["tipus"]]== "harc":
+    tomó.harcol(kartyak["ellenfel"])
 
 
 
