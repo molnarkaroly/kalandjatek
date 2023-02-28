@@ -12,13 +12,17 @@ import json
 with open('kaland.json', 'r', encoding='utf-8') as f:
     kartyak = json.load(f)
 
+cím = kartyak["cim"]
+bevezeto = kartyak["bevezeto"]
+ugrasss = kartyak["kartyak"][0]["szoveg"]
+
 def DoboKocka():
     dobas = random.randint(1,6)
     return dobas
 
 ugras= []
 probaszerencsee = False
-class Tomó:
+class Harcos:
     def __init__(self, nev, ugyesseg, eletero, szerencse, depresszio, inventory, arany, liquid, csillogo, kaja):
         self.nev = nev
         self.ugyesseg = DoboKocka() + 6
@@ -60,7 +64,10 @@ class Enemy:
         self.ugyesseg = DoboKocka + DoboKocka 
         self.eletero = DoboKocka + DoboKocka 
 
+tomó= Harcos("Tomó")
 
+if kartya["akcio"["tipus"]]== "harc":
+    tomó.harcol(kartya["ellenfel"])
 
 
 
