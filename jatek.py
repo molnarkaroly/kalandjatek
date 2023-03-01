@@ -59,10 +59,10 @@ class Harcos:
             self.szerencse -= 1
 
 class Enemy:
-    def __init__(self, nev, ugyesseg):
+    def __init__(self, nev, ugyesseg,eletero):
         self.name = nev
-        self.ugyesseg = DoboKocka + DoboKocka 
-        self.eletero = DoboKocka + DoboKocka 
+        self.ugyesseg = kartyak[]
+        self.eletero =  kartyak[]
 
 tomó= Harcos("Tomó")
 
