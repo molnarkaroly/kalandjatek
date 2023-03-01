@@ -1057,6 +1057,7 @@
         "szöveg" : "Elég hosszú ideje barangolsz már az alagutakban, és kezdesz kétségbe esni, mikor az északi falon egyszer csak egy ajtó buk- kan fel. Ha be akarsz nyitni rajta, lapozz a 120-ra. Ha kelet felé mennél tovább, lapozz a 28-ra",
         "akció" : {
             "ugrás" : [41]
+        }
     },
     {
         "szint" : 138,
@@ -1366,28 +1367,43 @@
     },
     {
         "szint" : 181,
-        "szöveg" : "",
+        "szöveg" : "Ahogy megkerülöd a medencét, látod, amint a sár bugyogni kezd. Hatalmas gázbubo- rékok emelkednek ki belőle és robbannak fel, rothadó hús szagával töltve be a levegőt. Tedd próbára SZERENCSED! Ha szerencsés vagy, lapozz a 192-re. Ha nincs szerencséd lapozz a 188-ra.",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 182,
-        "szöveg" : "",
+        "szöveg" : "A sárból két Iszapsárkány feje emelkedik ki. A szemöldökükből kinövő csápok zöld fénnyel izzanak, miközben áldozatuk után kutatnak. Óriási szájuk kinyílik, és bűzös gázfelhő ölel körbe. A szörnyek mély le- vegőt vesznek, közben pedig eredeti mére- tük kétszeresére nőnek meg. Előhúzod kar- dodat és reméled, elég szerencsés, erős és ügyes vagy, hogy megóvd magad a rád le- selkedő veszélytől.
+        szapsárkány
+
+ÜGYESSÉG 9
+
+ÉLETERO 5
+
+Második
+
+Iszapsárkány
+
+ÜGYESSEC 10
+
+ÉLETER 6
+
+Mindkét ellenfeled külön-külön támad rád minden körben, neked azonban el kell dön- tened, melyikükkel akarsz harcolni.TA ki- választott Iszapsárkánnyal a szokott módon küzdj meg. A másik ellen ugyanúgy dobj támadódobást, azonban ha a te Támadó- értéked a magasabb, nem okozol neki seb- zést, csupán kivéded az ő támadását. Ha az ő Támadóértéke a nagyobb, a szokásos módon okoz neked sebesülést. Ha mindkét bestiát sikerül legyőznöd, lapozz a 74-re.",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 183,
-        "szöveg" : "",
+        "szöveg" : "Az egyik keringö cölöp váratlanul elfordul, és könnyedén felhasítja a bőrödet. Tedd próbára SZERENCSED! Ha szerencsés vagy. lapozz a 194-re. Ha nem, lapozz a 170-re.",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 184,
-        "szöveg" : "",
+        "szöveg" : "Keleti irányba haladva elérsz a központi elágazáshoz. Ha innen északra folytatnád az utad, lapozz a 161-re. Ha tovább mennél kelet felé, lapozz a 136-ra.",
         "akció" : {
             "ugrás" : [41]
         }
