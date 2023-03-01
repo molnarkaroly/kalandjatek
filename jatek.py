@@ -90,8 +90,8 @@ class Harcos:
 class Enemy:
     def __init__(self, nev, ugyesseg, eletero, sebzes = 2):
         self.name = nev
-        self.ugyesseg = kartyak[]
-        self.eletero =  kartyak[]
+        self.ugyesseg = data[]
+        self.eletero =  data[]
         self.sebzes = sebzes
 
 
