@@ -10,16 +10,16 @@ import json
 
 
 with open('kaland.json', 'r', encoding='utf-8') as f:
-    kartyak = json.load(f)
+    data = json.load(f)
 
 k = -1
 vege = False
 while not vege:  
 
-cím = kartyak["cim"]
-bevezeto = kartyak["bevezeto"]
-ugrasss = kartyak["kartyak"][0]["szoveg"]
-akcio = kartyak["kartyak"][k]['akcio']
+cim = data["cim"]
+bevezeto = data["bevezeto"]
+ugrasss = data["kartyak"][0]["szoveg"]
+akcio = data["kartyak"][k]['akcio']
 print(akcio)
 
 def DoboKocka():
@@ -45,9 +45,9 @@ class Harcos:
             enemy.health -= self.strength
             if enemy.health <= 0:
                 print(f"{self.name} nyert a harcban.")
-                szoveg = (f'1: {ugras[1]}')
-                if len(ugras) > 1:
-                    szoveg = (f'1: {ugras[1]} 2:{ ugras[2]}' )
+                szoveg = (f'1: {"ugras"[1]}')
+                if len('ugras') > 1:
+                    szoveg = (f'1: {'ugras'[1]} 2:{ "ugras"[2]}' )
                 break
             self.health -= enemy.strength
             if self.health <= 0:
@@ -84,6 +84,7 @@ class Harcos:
             szerencse = 6
 
     def halál(self):
+        szöveg = " Játékod itt véget ért meghaltál XDDDDDDDDDDDD (sz@r lehet)"
 
 
 class Enemy:
