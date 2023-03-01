@@ -63,23 +63,36 @@ class Harcos:
             probaszerencsee = False
             self.szerencse -= 1
 
-    def szerencse+(self):
+    def ugyesseg+(self):
+        self.ugyesseg = self.ugyesseg + ugyi+
 
-    def szerencse-(self):
+    def ugyesseg-(self):
+        self.ugyesseg = self.ugyesseg + ugyi-
 
     def eletero+(self):
+        self.eletero = self.eletero + elet+
 
     def eletero-(self):
+        self.eletero = self.eletero - elet-
 
     def szerencse+(self):
+        self.szerencse = self.szerencse + szeri+
 
-    def halál(Self)
+    def fix(self):
+        if fix == True:
+            szerencse < 6
+            szerencse = 6
+
+    def halál(self):
+
 
 class Enemy:
-    def __init__(self, nev, ugyesseg,eletero):
+    def __init__(self, nev, ugyesseg, eletero, sebzes = 2):
         self.name = nev
         self.ugyesseg = kartyak[]
         self.eletero =  kartyak[]
+        self.sebzes = sebzes
+
 
                                                                 #innentől karcsi dolga "DO NOT ENTER"
 
