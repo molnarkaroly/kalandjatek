@@ -155,11 +155,12 @@
     },
     {
         "szint" : 18,
-        "szöveg" : "Amint belépsz a szobába, rémülten eszmélsz rá, hogy előbb alaposan szét kellett volna, nézned a plafonon ugyanis egy hatalmas Pók kapaszkodik, ami minden szemével téged bámul. Négy ezüstszínű gubó lóg mellette, és összeszorul, a szíved mikor rájössz, hogy két ember, egy Törpe és egy Elf van beléjük csavarva, akik bizonyára leendő ellenfeled legutóbbi áldozatai voltak, és már csak arra várnak, hogy a bestia egy jót lakmározzon belőlük. A pók némán a padlóra pottyan, csáprágói mohón feléd nyúlnak. Óriáspók Ügyesség-9 Életerő-5",
+        "szöveg" : "Amint belépsz a szobába, rémülten eszmélsz rá, hogy előbb alaposan szét kellett volna, nézned a plafonon ugyanis egy hatalmas Pók kapaszkodik, ami minden szemével téged bámul. Négy ezüstszínű gubó lóg mellette, és összeszorul, a szíved mikor rájössz, hogy két ember, egy Törpe és egy Elf van beléjük csavarva, akik bizonyára leendő ellenfeled legutóbbi áldozatai voltak, és már csak arra várnak, hogy a bestia egy jót lakmározzon belőlük. A pók némán a padlóra pottyan, csáprágói mohón feléd nyúlnak",
         "akció" : {
-            "EllefelNev" : "Óriáspók",
-            "EllenfelUgyi" : "9",
-            "EllenfelElet" : "5",
+            "harc" : "Óriáspók Ügyesség-9 Életerő-5",
+            "Ellenfelnev" : "Óriáspók",
+            "Ellenfelugyi" : "9",
+            "Ellenfelelet" : "5",
             "ugrás" : [94]
         }
     },
@@ -353,10 +354,8 @@
         "szöveg" : "Az alagút, bár folyamatosan jobbra-balra kanyarog, nagyjából mégis tartja az északi irányt, végül élesen oldalra kanyarodik, és ekkor majdnem belefutsz egy fekete köpenybe öltözött alakba. Tőrt tart a kezében, az arcán ülő tekintet rettegésről árulkodik! Rájössz, hogy nem te vagy az egyetlen, akit most próbára tesznek, és hogy mindketten ugyanazon Szobor után kutattok. A fickó rád veti magát, nyilvánvaló, hogy mielőbb végezni akar veled. Harcolnod kell!",
         "akció" : {
             "harc" : "Tolvaj Ügyesség-7 Életerő-6",
-            "EllefelNev" : "Tolvaj",
-            "EllenfelUgyi" : "7",
-            "EllenfelElet" : "6",
-            "ugrás" : [85]
+            "nyertél = True" : [85],
+            "else" : "halál"
         }
     },
     {
@@ -423,8 +422,8 @@
         "szint" : 49,
         "szöveg" : "A növénykének valóban mágikus gyógyító tulajdonsága van, és még szerencsét is hoz. Nyersz 4 ÉLETERŐ pontot, SZERENCSE pontjaid pedig mostantól kezdve nem fognak 6 alá menni. Az északi ajtón át távozol. Lapozz a 152-re.",
         "akció" : {
-            "+HP" : "+4 Életerő",
-            "Broken" : "A szerencséd mostantól nem mehet 6 alá",
+            "elet+" : 4,
+            "fix" : "A szerencséd mostantól nem mehet 6 alá",
             "ugrás" : [152]
         }
     },
@@ -556,9 +555,10 @@
         "szint" : 66,
         "szöveg" : "Egy lépcsősorhoz érsz, és már épp lefelé indulnál rajtuk, mikor a hátad mögött valami zaj veszélyre figyelmeztet. Megperdülsz, és egy alacsony, köpcös alakot pillantasz meg. Ocsmány arca undok vigyorra húzódik. Háta mögül előkap egy tüskés buzogányt, majd a hírhedt Sikító Szellemet is megszégyenítő csataüvöltéssel megpörgeti, és a karodba vágja. Vesztesz 1 ÉLETERŐ pontot. Meg kell küzdened vele.",
         "akció" : {
-            "EllefelNev" : "Törpe",
-            "EllenfelUgyi" : "8",
-            "EllenfelElet" : "5",
+            "harc" : "Törpe Ügyesség-8 Életerő-5",
+            "Ellenfelnev" : {},
+            "Ellenfelugyi" : {},
+            "Ellenfelelet" : {},
             "ugrás" : [118]
         }
     },
@@ -566,7 +566,7 @@
         "szint" : 67,
         "szöveg" : "Az alagút hamarosan tágulni kezd és csodálatos látvány tárul a szemed elé. Egy földalatti völgyet határoló magas sziklafal kellős közepén, egy keskeny szirten találod magad. Nem látsz lefelé vezető utat, és nem mered megkockáztatni, hogy visszafordulj, Nálad van a Lebegés Köpenye? Ha igen, lapozz a 105-re. Ha nem, lapozza 86-ra",
         "akció" : {
-            "ugrás" : [105]
+            "ugrás" : [41]
         }
     },
     {
