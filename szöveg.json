@@ -1054,9 +1054,10 @@
     },
     {
         "szint" : 137,
-        "szöveg" : "Elég hosszú ideje barangolsz már az alagutakban, és kezdesz kétségbe esni, mikor az északi falon egyszer csak egy ajtó buk- kan fel. Ha be akarsz nyitni rajta, lapozz a 120-ra. Ha kelet felé mennél tovább, lapozz a 28-ra",
+        "szöveg" : "Elég hosszú ideje barangolsz már az alagutakban, és kezdesz kétségbe esni, mikor az északi falon egyszer csak egy ajtó bukkan fel. Ha be akarsz nyitni rajta, lapozz a 120-ra. Ha kelet felé mennél tovább, lapozz a 28-ra",
         "akció" : {
             "ugrás" : [41]
+        }
     },
     {
         "szint" : 138,
