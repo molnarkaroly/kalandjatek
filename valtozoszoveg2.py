@@ -34,7 +34,7 @@ class MyApp:
 
     def create_buttons(self):
         for i in self.szintek:
-                button = CustomButton(self.master, text=f"     {i}     ", font=("diediedie", 30))
+                button = CustomButton(self.master, text=f"{i}", font=("diediedie", 30))
                 button.pack(pady=5)
 
 root = tk.Tk()
