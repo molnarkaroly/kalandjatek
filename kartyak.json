@@ -8,11 +8,11 @@
           "ugras": [41]
         }
       },
-    {   "szint": 2,
+    {   "sorszam": 2,
         "szoveg": "Ez egy szint 2-es kartya.",
         "akcio": "Vegyen el 1 ermet a kincsesladajabol."
     },  
-    {   "szint": 3,
+    {   "sorszam": 3,
         "szoveg": "Ez egy szint 2-es kartya.",
         "akcio": "Vegyen el 1 ermet a kincsesladajabol."
     }
