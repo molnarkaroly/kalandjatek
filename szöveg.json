@@ -4,8 +4,10 @@
 [
     {
     "cím" : "Az ítélet labirintusa",
-    "bevezető" : "Az Osztriga-öböltól délre, nagyjából nyolcvan kilométerre terül el a Koponyák Sivataga. Forró, veszedelmes és mindent egybevetve igen kellemetlen hely, ám te kénytelen vagy átkelni rajta, hisz déli felén terül el a drágakőbányáiról messze földön hires és gazdag Zafirváros. Vonz a hatalmas vagyon, mely minden harcos számára elérhető, aki hajlandó akár a köveket, akár a pénzt kíséri egyik településből a másikba. A munka azonban nem veszélytelen.Ahogy a sivatag felé közeledsz, segélykiáltásokat hallasz az utat szegélyező bozótos túloldaláról. Mikor közelebb lépsz, még épp lá tod, ahogy egy ocsmány Goblin tört márt egy igen fontosnak látszó Elf férfi szivébe, aki azonnal a földre roskad.Egyból előre rontasz, hogy elkapd a gyilkost, ám pechedre meg- botlasz, az aljas teremtmény pedig észrevesz téged, és eltűnik az alj- növényzetben.Csak állsz, és a halott Elf tetemét bámulod. Amennyire meg tudod állapítani, az egyik helyi törzs vezetője lehetett. Kezében egy nagy, kék színű gyémántot szorongat. Hirtelen megrezzennek körülötted a bokrok! Arra gondolsz, talán a Goblin tért vissza, így elöhúzod kar- dodat. Legnagyobb meglepetésedre azonban húsz vagy harminc Elf gyűrűjében találod magadat, akik megfeszített íjakkal vesznek körbe. Egyikük előre lép, és komoran megszólít.- Ember! - kezdi. Karddal a kezedben, apám, a Törzsfőnökünk meggyilkolt testével a lábad elött találtunk rád.Rájössz, hogy ezek azt hiszik, te vagy a gyilkos. Tiltakozni pró- bálnál, azonban az Elf egy intésére elhallgatsz. Az itélet Labirin- tusához viszünk fejezi be mondanivalóját. Hátat fordit neked, és elsétál, te pedig kiséröid körében kénytelen vagy követni. Miközben az örök egymás közt vitatják meg a látottakat, megtudod, hogy at labirintus egy titkos hely, ahol a bünösöket teszik próbára. Minden próba elött egy kis Aranyszobrot rejtenek el annak mélyén, a próba alanyának pedig meg kell találnia azt. Ha ez nem sikerül, bünösnek ítélik, ám ha rálel, és sikerül kijuttatnia odabentről, ártatlannak ta- lálják, és szabadon engedik.A fak ritkulni kezdenek, a menet pedig egy hatalmas fa törzsénél megtorpan. A Fönök fia motyog pár szót, mire a kéreg egy része ki- nyilik, mögötte pedig feltünik a labirintus bejárata... ",
-    "ugrás" : [1]
+    "bevezető" : "Az Osztriga-öböltól délre, nagyjából nyolcvan kilométerre terül el a Koponyák Sivataga. Forró, veszedelmes és mindent egybevetve igen kellemetlen hely, ám te kénytelen vagy átkelni rajta, hisz déli felén terül el a drágakőbányáiról messze földön hires és gazdag Zafirváros. Vonz a hatalmas vagyon, mely minden harcos számára elérhető, aki hajlandó akár a köveket, akár a pénzt kíséri egyik településből a másikba. A munka azonban nem veszélytelen.Ahogy a sivatag felé közeledsz, segélykiáltásokat hallasz az utat szegélyező bozótos túloldaláról. Mikor közelebb lépsz, még épp lá tod, ahogy egy ocsmány Goblin tört márt egy igen fontosnak látszó Elf férfi szivébe, aki azonnal a földre roskad.Egyból előre rontasz, hogy elkapd a gyilkost, ám pechedre meg- botlasz, az aljas teremtmény pedig észrevesz téged, és eltűnik az alj- növényzetben.Csak állsz, és a halott Elf tetemét bámulod. Amennyire meg tudod állapítani, az egyik helyi törzs vezetője lehetett. Kezében egy nagy, kék színű gyémántot szorongat. Hirtelen megrezzennek körülötted a bokrok! Arra gondolsz, talán a Goblin tért vissza, így elöhúzod kar- dodat. Legnagyobb meglepetésedre azonban húsz vagy harminc Elf gyűrűjében találod magadat, akik megfeszített íjakkal vesznek körbe. Egyikük előre lép, és komoran megszólít.- Ember! - kezdi. Karddal a kezedben, apám, a Törzsfőnökünk meggyilkolt testével a lábad elött találtunk rád.Rájössz, hogy ezek azt hiszik, te vagy a gyilkos. Tiltakozni pró- bálnál, azonban az Elf egy intésére elhallgatsz. Az itélet Labirin- tusához viszünk fejezi be mondanivalóját. Hátat fordit neked, és elsétál, te pedig kiséröid körében kénytelen vagy követni. Miközben az örök egymás közt vitatják meg a látottakat, megtudod, hogy at labirintus egy titkos hely, ahol a bünösöket teszik próbára. Minden próba elött egy kis Aranyszobrot rejtenek el annak mélyén, a próba alanyának pedig meg kell találnia azt. Ha ez nem sikerül, bünösnek ítélik, ám ha rálel, és sikerül kijuttatnia odabentről, ártatlannak ta- lálják, és szabadon engedik.A fak ritkulni kezdenek, a menet pedig egy hatalmas fa törzsénél megtorpan. A Fönök fia motyog pár szót, mire a kéreg egy része kinyilik, mögötte pedig feltünik a labirintus bejárata... ",
+    "akció" : {
+        "ugrás" : [1]
+        }
     },
     {
         "szint" : 1,
@@ -87,7 +89,7 @@
         "akció" : {
             "válaszút" : {
                 "opció 1" : "Beszélsz a férfival : [1]",
-                "opció 2" : "Átnyúlsz a rácson és megölöd [2]",
+                "opció 2" : "Átnyúlsz a rácson és megölöd : [2]",
                 "ugrás" : [149 , 24]
             }
         }
@@ -156,13 +158,13 @@
         "szöveg" : "Amint belépsz a szobába, rémülten eszmélsz rá, hogy előbb alaposan szét kellett volna, nézned a plafonon ugyanis egy hatalmas Pók kapaszkodik, ami minden szemével téged bámul. Négy ezüstszínű gubó lóg mellette, és összeszorul, a szíved mikor rájössz, hogy két ember, egy Törpe és egy Elf van beléjük csavarva, akik bizonyára leendő ellenfeled legutóbbi áldozatai voltak, és már csak arra várnak, hogy a bestia egy jót lakmározzon belőlük. A pók némán a padlóra pottyan, csáprágói mohón feléd nyúlnak",
         "akció" : {
             "harc" : "Óriáspók Ügyesség-9 Életerő-5",
-            "if nyertél = True" : [94],
+            "nyertél == True" : [94],
             "else" : "halál" 
         }
     },
     {
         "szint" : 19,
-        "szöveg" : "Igyekezeted, hogy szilárd talajra juss, hiába- valónak tűnik, ám teszel még egy utolsó. kétségbeesett próbálkozást: a kijárat felé veted magad.",
+        "szöveg" : "Igyekezeted, hogy szilárd talajra juss, hiábavalónak tűnik, ám teszel még egy utolsó, kétségbeesett próbálkozást: a kijárat felé veted magad.",
         "akció" : {
             "probaszerencse" : "Ha szerencséd van elkapod",
             "ugrás" : [176, 151]
@@ -173,7 +175,7 @@
         "szöveg" : "Az alagút egy súlyos ajtóban ér véget, ami le van zárva. De nem kulccsal: három tekerő gombot látsz rajta. Ha ismered a kinyitásához szükséges kombinációt, add össze a számokat, és lapozz az így kapott fejezetpontra. Ha nem tudod. vissza kell térned a homokos folyópartra és valahol máshol kell próbálkoznod, lapozz a 76-ra.",
         "akció" : {
             "inventory" : "Kombináció",
-            "ugrás" : ["add össze öket ...", 76]
+            "ugrás" : [47, 76]
         }
     },
     {
@@ -312,67 +314,79 @@
         "szint" : 37,
         "szöveg" : "A törmelékek közt kutatva belerúgsz valami fémes dologba. Miután eltakarítottad a kör- nyékéről a szemetet, egy masszív csapóajtó körvonalai rajzolódnak ki előtted a padló- ban. Nem tudod megállapítani, hogy túl rozsdás-e ahhoz, hogy fel lehessen nyitni, te mindenesetre megpróbálod. Tedd próbára SZERENCSED! Ha szerencsés vagy, lapozz a 199-re. Hogyha nincs szerencséd, lapozz a 130-ra.",
         "akció" : {
-            "ugrás" : [41]
+            "probaszerencse" : "Megpróbálod felnyitni",
+            "ugrás" : [199, 130]
         }
     },
     {
         "szint" : 38,
         "szöveg" : "Átkutatod a zsákutcát, remélve, hogy találsz valamit. Tedd próbára SZERENCSED! Hogyha szerencsés vagy, lapozz a 114-re. Ha nincs szerencséd, lapozz az 55-re.",
         "akció" : {
-            "ugrás" : [41]
+            "probaszerencse" : "Keresgélsz",
+            "ugrás" : [144, 55]
         }
     },
     {
         "szint" : 39,
-        "szöveg" : "A szobába belépve az eddig látott leg- civilizáltabb teremben találod magad. A fa- lakat fa burkolólapok borítják, fáklyák he- lyett itt egy lágy fényt árasztó gömb bizto- sítja a világítást, mely a szoba közepén álló asztal felett lebeg. E mellett egy férfi gör- nyedt alakját veszed észre. Miközben be- csukod magad mögött az ajtót, az öreg- ember felemelkedik, és üdvözlően feléd nyújtja mindkét karját. Hangja vékony és remegő, és csak ekkor jössz rá, mennyire vén is lehet. Megtaláltad a Szobrot? kérdezi tőled. Ha nálad van a tárgy, lapozz a 91-re. Ha nincs nálad, lapozz a 131-re. Ha nem bízol meg benne és rá akarsz támadni, lapozz a 77-re.",
+        "szöveg" : "A szobába belépve az eddig látott legcivilizáltabb teremben találod magad. A falakat fa burkolólapok borítják, fáklyák helyett itt egy lágy fényt árasztó gömb biztosítja a világítást, mely a szoba közepén álló asztal felett lebeg. E mellett egy férfi görnyedt alakját veszed észre. Miközben becsukod magad mögött az ajtót, az öregember felemelkedik, és üdvözlően feléd nyújtja mindkét karját. Hangja vékony és remegő, és csak ekkor jössz rá, mennyire vén is lehet. Megtaláltad a Szobrot? kérdezi tőled. Ha nálad van a tárgy, lapozz a 91-re. Ha nincs nálad, lapozz a 131-re. Ha nem bízol meg benne és rá akarsz támadni, lapozz a 77-re.",
         "akció" : {
-            "ugrás" : [41]
+            "inventory" : "AranySzobor",
+            "válaszút" : {
+                "opció 1" : "Megmutatod neki a szobrot ha nálad van [1]",
+                "opció 2" : "Nincs nálad a szobor [2]",
+                "opció 3" : "Nem bízol az öregemberben és rá támadsz [3]",
+                "ugrás" : [91, 131, 77]
+            }
         }
     },
     {
         "szint" : 40,
         "szöveg" : "Miközben a termeszektől nyüzsgő építményen haladsz, az baljósan recseg-ropog a talpad alatt. Minden egyes lépéssel újabb darabjai esnek bele a vízbe. Végül már csak egyetlen kötél marad épen, ami az utolsó deszkadarabot tartja. Tedd próbára SZERENCSÉD! Ha szerencsés vagy, lapozz a 60-ra. Ha nem, lapozz a 75-re.",
         "akció" : {
-            "ugrás" : [41]
+            "probaszerencse" : "Szét törik-e a súlyod alatt az építmény",
+            "ugrás" : [60, 75]
         }
     },
     {
         "szint" : 41,
-        "szöveg" : "Az alagút, bár folyamatosan jobbra-balra kanyarog, nagyjából mégis tartja az északi irányt, végül élesen oldalra kanyarodik, és ekkor majdnem belefutsz egy fekete köpenybe öltözött alakba. Tőrt tart a kezében, az arcán ülő tekintet rettegésről árulkodik! Rájössz, hogy nem te vagy az egyetlen, akit most próbára tesznek, és hogy mindketten ugyanazon Szobor után kutattok. A fickó rád veti magát, nyilvánvaló, hogy mielőbb végezni akar veled. Harcolnod kell!
-        Tolvaj
-        ÜGYESSÉG: 7
-        ÉLETERŐ: 6
-        Ha győzöl, lapozz a 85-re.",
+        "szöveg" : "Az alagút, bár folyamatosan jobbra-balra kanyarog, nagyjából mégis tartja az északi irányt, végül élesen oldalra kanyarodik, és ekkor majdnem belefutsz egy fekete köpenybe öltözött alakba. Tőrt tart a kezében, az arcán ülő tekintet rettegésről árulkodik! Rájössz, hogy nem te vagy az egyetlen, akit most próbára tesznek, és hogy mindketten ugyanazon Szobor után kutattok. A fickó rád veti magát, nyilvánvaló, hogy mielőbb végezni akar veled. Harcolnod kell!",
         "akció" : {
-            "ugrás" : [41]
+            "harc" : "Tolvaj Ügyesség-7 Életerő-6",
+            "nyertél = True" : [85],
+            "else" : "halál"
         }
     },
     {
         "szint" : 42,
         "szöveg" : "A járat tovább szélesedik, végül egy hatalmas barlangüregben találod magad. Mindkét oldaladnál sztalagmitok és sztalaktitok meredeznek. Néhányuk hatalmas kőoszloppá nőtt össze az idők folyamán, melyek mögött kimondhatatlan borzalmak lapulhatnak. Érzed, hogy a barlangban folyamatosan mozog a levegő, és rájössz, hogy ennek oka egy gyors folyású, igen veszedelmesnek tűnő folyó. Feltekintve szemeid követik a cseppkőoszlopok vonalait, egészen addig, míg el nem tűnnek a plafont elrejtő végtelen sötétségben. Valahol a folyó mentén egy kis, nem túl bizalomgerjesztő híd körvonalát sikerül kivenni. Lapozz a 27-re.",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [27]
         }
     },
     {
         "szint" : 43,
         "szöveg" : "Köpenyed hirtelen széttárul, és megszakad a zuhanás. Egy másodpercig mozdulatlanul lebegsz. Letekintesz, de még most sem látod az alját. Meglepetten és hálásan veszed tudomásul, hogy új szerzeményed óvatosan visszaszállít téged a bejárathoz. Mikor már kint vagy, megkönnyebbülten felsóhajtasz, majd észak felé folytatod az utad. Lapozz a 68-ra.",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [68]
         }
     },
     {
         "szint" : 44,
         "szöveg" : "Döbbenetes előrelátásodtól vezérelve eleve gyanítottad, hogy itt egy csapda vár rád, így sikerül félre ugranod anélkül, hogy a lövedékek eltalálnának; mindkettő ártalmatlanul hull a földre, Lapozz a 65-re.",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [65]
         }
     },
     {
         "szint" : 45,
         "szöveg" : "Ha be akarsz nyitni az ajtón, lapozz a 90-re. Ha tovább mennél keleti irányba, lapozz a 16-ra.",
         "akció" : {
-            "ugrás" : [41]
+            "válaszút" : {
+                "opció 1" : "Be szeretnél nyitni az ajtón [1]",
+                "opció 2" : "Inkább tovább mennél [2]",
+                "ugrás" : [90, 16]
+            }
+            
         }
     },
     {
@@ -386,49 +400,69 @@
         "szint" : 47,
         "szöveg" : "Az ajtóhoz lépsz és kezelésbe veszed a hatalmas zárat: tekerni kezded a tárcsákat, míg a helyes kombinációt nem sikerül beállítanod rajta. Ahogy az utolsót is a megfelelő helyzetbe fordítod, az ajtó kinyílik és egy szoba tárul fel előtted, melynek falait könyvekkel megrakott polcok szegélyezik. Egy könyvtárban találod magad. A középen álló asztalon három nyitott könyvet látsz. Ha a pirosba akarsz beleolvasni, lapozz az 59-re. Hogyha a kékre vagy kíváncsi, lapozz a 104-re. Ha a zöld érdekel, lapozz a 88-ra. Ha nem tudsz olvasni és úgy döntesz, távozol az északi ajtón át, lapozz a 10-re.",
         "akció" : {
-            "ugrás" : [41]
+            "válaszút" : {
+                "opció 1" : "Ha a piros érdekel [1]",
+                "opció 2" : "Ha a kék érdekel [2]",
+                "opció 3" : "Ha a zöld érdekel [3]",
+                "opció 4" : "Ha analfabéta vagy tovább mész Északra [4]",
+                "ugrás" : [59, 104, 88, 10]
+            }
         }
     },
     {
         "szint" : 48,
         "szöveg" : "Probléma nélkül eléred a verem alját. Lapozz a 27-re.",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [27]
         }
     },
     {
         "szint" : 49,
         "szöveg" : "A növénykének valóban mágikus gyógyító tulajdonsága van, és még szerencsét is hoz. Nyersz 4 ÉLETERŐ pontot, SZERENCSE pontjaid pedig mostantól kezdve nem fognak 6 alá menni. Az északi ajtón át távozol. Lapozz a 152-re.",
         "akció" : {
-            "ugrás" : [41]
+            "+HP" : "+4 Életerő",
+            "Broken" : "A szerencséd mostantól nem mehet 6 alá",
+            "ugrás" : [152]
         }
     },
     {
         "szint" : 50,
         "szöveg" : "A tetemet átkutatva 2 Aranytallért és egy darab pergament találsz, melyre három számot írtak. Fogalmad sincs, mit jelenthetnek, de úgy gondolod, egy zár kombinációja lehet talán éppen az, amelyik a Szobrot védi. A számok rendre 15, 10 és 22. Úgy döntesz, jól megjegyzed őket, mert mindig fennáll a veszélye annak, hogy elveszted a papírdarabot. Északi irányba folytatod az utadat. Lapozz a 143-ra",
         "akció" : {
-            "ugrás" : [41]
+            "+add" : "2 Aranytallér",
+            "+add" : "kombináció",
+            "ugrás" : [143]
         }
     },
     {
         "szint" : 51,
-        "szöveg" : "Egy kis helyiségbe nyitsz be, mely első ránézésre nem tartalmaz semmi mást, csak nagy halom törmeléket a padlón. Ahogy beljebb lépsz, kellemetlen szag csapja meg az orrodat, és egy éles, magas, és - amennyire meg tudod állapítani - dühödt visítás kezd egyre erősödni. Végül egy rikoltás kíséretében két hatalmas Denevér ereszti el a plafont a szoba két sarkában, és feléd kezdenek repülni. Ahogy ösztönösen lebuksz sikerül észrevenned a lények vicsorgó agyarait, melyek, készek szétcincálni a torkodat Ha gyorsan kihátrálsz, majd becsapod magad mögött a bejárati ajtót, lapozz a 80-ra Hogyha megveted a lábad és megküzdesz ezekkel a szörnyű teremtményekkel, lapozz a 140-re.",
+        "szöveg" : "Egy kis helyiségbe nyitsz be, mely első ránézésre nem tartalmaz semmi mást, csak nagy halom törmeléket a padlón. Ahogy beljebb lépsz, kellemetlen szag csapja meg az orrodat, és egy éles, magas, és amennyire meg tudod állapítani dühödt visítás kezd egyre erősödni. Végül egy rikoltás kíséretében két hatalmas Denevér ereszti el a plafont a szoba két sarkában, és feléd kezdenek repülni. Ahogy ösztönösen lebuksz sikerül észrevenned a lények vicsorgó agyarait, melyek, készek szétcincálni a torkodat Ha gyorsan kihátrálsz, majd becsapod magad mögött a bejárati ajtót, lapozz a 80-ra Hogyha megveted a lábad és megküzdesz ezekkel a szörnyű teremtményekkel, lapozz a 140-re.",
         "akció" : {
-            "ugrás" : [41]
+            "válaszút" : {
+                "opció 1" : "Vissza futsz és becsapod az ajtót [1]",
+                "opció 2" : "Itt maradsz és harcolsz [2]",
+                "ugrás" : [80, 140]
+            }
         }
     },
     {
         "szint" : 52,
         "szöveg" : "A járat élesen keletre fordul, és végül egy ajtóba torkollik. Lapozz a 45-re",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [45]
         }
     },
     {
         "szint" : 53,
         "szöveg" : "A part teljesen kihaltnak tűnik, te pedig eléggé óvatlanul járkálsz, így a homokban bujkáló apró, bíbor rák minden gond nélkül csíp bele a lábadba. Vesztesz 2 ÉLETERŐ pontot. A három ajtó bármelyikén át távozhatsz. Ha az északi ajtón át távoznál, lapozz a 87-re. Ha a nyugatin lépnél be, lapozza 6-ra. Ha a keletivel próbálnál szerencsét, lapozz a 111-re",
         "akció" : {
-            "ugrás" : [41]
+            "-HP" : "Vesztesz 2 Életerőpontot",
+            "válaszút" : {
+                "opció 1" : "Északra mennél [1]",
+                "opció 2" : "NYugara mennél [2]",
+                "opció 3" : "KEletre mennél [3]",
+                "ugrás" : [87, 6, 111]
+            }
         }
     },
     {
@@ -774,700 +808,263 @@
     },
     {
         "szint" : 102,
-        "szöveg" : "Miután felhajtod az üvegecsében levő italt, megdöbbenve tapasztalod, mennyivel jobban érzed most magad. Az üvegben a Szerenese Italának egy adagja volt. Növeld meg 1-el Kezdeti szerencsédet, majd állítsd vissza jelenlegi pontjaidat erre az új értékre. Folytatod a kúszást észak felé. Lapozz a 169-re.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 103,
-        "szöveg" : "Bár a víz mély és elég gyors folyása van, annyi erő benned, hogy folyásirányba úszva jóval lentebb kievickélj a partra. Miután kifújtad magad, visszatérsz a hídhoz és folytatod utad az ösvényen. Lapozz a 76-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 104,
-        "szöveg" : "A kék könyv térképeket tartalmaz, és bár minden nevet föl írtak bele, a képen felismerni véled Analandot. Úgy tűnik, ez a mű tartalmazza azon városok, falvak, és ami még fontosabb, bányák helyzetét, melyekben drágakövet vagy nemesfémet találhatsz. Ha sikerülne magaddal vinned ezt a kötetet a felszínre, futármunkád sokkal jövedelmezőbbé és biztonságosabbá válhatna. Biztonságba helyezed hát kabátod egyik belső zsebébe. Mielőtt elhagynád a termet, még belenézhetsz a piros- lapoz az 59-re vagy a zöld lapozz a 88-ra könyvbe. Ha inkább egyszerűen távoznál az északi ajtón át, lapozza 10-re. ",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 105,
-        "szöveg" : "Döbbenten veszed észre, hogy köpenyed felfúvódik és felemel a lábadról. Lassan lebegsz le a talajra, és könnyedén érsz földet. Alig mered elhinni, mekkora szerencséd van. Lapozza 27- re.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 106,
-        "szöveg" : "A járat továbbra is északnak tart, de hamarosan egy leágazást találsz, mely keletre tér le. Ha erre mennél tovább, lapozz a 179-re. Ha egyenesen folytatnád az utad, lapot a 153-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 107,
-        "szöveg" : "Mivel az ajtó túloldaláról hangokat hallasz átszűrődni, óvatosan nyitsz be. Ahogyan bekukucskálsz a túloldalon, két cseveg Orkot veszel észre. Remélve, hogy nem fogod érdekelni őket, megpróbálsz elsétálni mellettük, ám amikor észrevesznek, mindketten kardot húznak elő. Egyesével kell megküzdened velük.Ha legyőzöd ellenfeleidet, lapozz a 198-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 108,
-        "szöveg" : "Északi irányba követed az átjárót. Hamarosan elérsz egy keleti elágazáshoz. Hogyha egyenesen mész tovább, lapozz a 146-ra. Ha letérsz6 jobbra, lapozz a 79-re.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 109,
-        "szöveg" : "Elhátrálsz a férgek elől, míg kinyújtott kezeiddel meg nem érzed az északi falat. Megfordulsz és próbálsz valamilyen lábtartót keresni a padló szintje fölött. Egy keskeny szegély fut végig nagyjából fél méter magasan. Kapaszkodót keresve végül megmarkolsz egy kiálló kődarabot és fellépsz. Majdnem elveszted a fogódzkodódat, mikor a falszakasz, amin kapaszkodsz, befordul és téged is kimenekít szorult helyzetedből. A szobán kívül találod magad, egy észak felé haladó folyosón. Megkönnyebbülten fellélegzel, lelépsz a falról és előre indulsz. Egy elágazáshoz érkezel, melyen szintén egyenesen haladsz tovább. Lapozz a 195-re",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 110,
-        "szöveg" : "Az Aranykules illik a zárba, és egy észak felé haladó folyosót fed fel elötted. A járat élesen jobbra kanyarodik, majd vissza balra. A második sarok után egy tükörrel kerülsz szembe, ami teljesen elállja az utadat. Egy pillanatig saját tükörképed néz veled farkas- szemet, a következőben pedig - legnagyobb megrökönyödésedre már ki is lép belőle, előhúzza kardját és rád támad! Mivel ez a valami a tökéletes tükörképed, ugyanolyan ÜGYESSÉGGEL rendelkezik, mint te, ám mi- után a síkból térbe való kilépés eléggé ki- meritette, ÉLETEREJE 2-vel kevesebb lesz a tiédnél. Ez ígérkezik a legnehezebb harcod- nak, mivel nem vagy meggyőződve arról, hogy meg tudod-e nyerni. Az biztos, hogy ö végezni tud veled, abban azonban már ke- vésbé vagy biztos, hogy ellenfeled legyő- zése nem fog-e öngyilkosságnak minősülni? Ha megnyered a csatát, lapozz a 128-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 111,
-        "szöveg" : "Az alagút elkeskenyedik, és egyre nehe- zebben tudsz csak előre haladni. A plafon meredeken lefelé indul, igy először le kell hajolnod, végül négykézlábra kényszerülsz Valamennyire látod magad elött az utat a szűk járaton át. Tedd próbára SZERENCSÉD! Ha nincs szerencséd, lapozz a 116-ra. Ha szerencséd van, találsz egy kézre álló kö- darabot, amivel sikerül eléggé kiszélesite- ned az alagutat ahhoz, hogy gond nélkül továbbhaladhass - lapozz a 20-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 112,
-        "szöveg" : "Ahogy a folyosón haladsz, furcsa hangot hallasz. Megállsz hallgatózni. Csoszogó léptek zaja úti meg a füledet. Nincs hová bújnod, igy valamiféle szörnyeteg felbuk- kanását várva előhúzod kardodat. Ehelyett egy öregember bukkan fel elötted. Fegy- veredre pillant, és esdekelni kezd. - Kímélj meg! Csak egy vén, egyszerü fickó vagyok, aki elmenekült a cellájából. Hüvelyébe dugod a kardod, a férfi pedig elmondja, hogy már évek óta itt él, mióta fiatal ko- rában beküldték az Ítélet Labirintusába. Az egyik szörny elleni harc során súlyos sebet szerzett, és bár túlélte az összecsapást, el- vesztette a fegyvereit és igy képtelen volt folytatni az utat. Régóta bujkál már idelenn, most pedig már túl öreg ahhoz, hogy visszatérjen a fenti világba, ahol egyéb- ként is végeznének vele, mivel nem tudja a Szobor bemutatásával bizonyítani ártatlan- ságát. Igy inkább idelenn maradt a végtelen éjszakában, és abból élt, amivel az utazók megszánták. Miközben beszél, úgy dönt, még egy utolsó kísérletet tesz a kijutásra, igy megkérdezi tőled, merre találja a be- járatot. Hogyha megmondod neki, lapozz a 187-re. Ha rossz utat mondasz neki, lapozz a 15 az6-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 113,
-        "szöveg" : "Ahogy felrázod, a fickó szemei felpattan- nak, és mikor megpillant téged, rettegés tölti el. Ne, ne! Kérem, ne öljön meg! - kö- nyörög. Ha életben hagy, minden eldugott pénzemet magának adom! Ha végezni akarsz vele, lapozz a 17-re. Ha elfogadod az ajánlatát, lapozz a 83-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 114,
-        "szöveg" : "Kitartóan kutatsz, de semmit nem találsz. Végül leülsz egy nagy, négyzet alakú köre, hogy megpihenj, azonban amint teljes sú- lyoddal ránchezedsz, csikorgó hang úti meg a füledet, és a fal egy része kinyílik. Minden korábbi fáradtságodat feledve talpra ugrasz és folytatod az utad. Lapozz a 177-re.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 115,
-        "szöveg" : "Lezuhansz a verembe, és felkészülsz rá,hogy talpad mindjárt a sziklás padlóba ütkö- zik. Az azonban csak nem jön, és beletelik egy kis időbe, hogy rádöbbenj: a lyuknak nincs is alja! A súlytalanság érzése kerit hatalmába, te pedig csak esel... és esel... és esel... Kalandod itt véget ér.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 116,
-        "szöveg" : "Hátizsákod beszorul az egyre keskenyedő járatban. Képtelen vagy kibújni belőle, és bármennyire is próbálkozol, meglazítani sem vagy képes. Egy pillanatig megpihensz, majd újult elszántsággal teszel még egy utolsó próbát. Mély, remegő hangot hallasz és a levegőt por tölti meg, miközben mö- götted a plafon egy része az alagútba zuhan. Immáron teljes sötétségbe vagy zárva. Tu- dod, hogy nem fogsz megfulladni, mivel hüvös szellő simogatja az arcod az előtted magasodó fal egy keskeny repedésén át. Rájössz, hogy éh- és szomjhalál vár rád, így imádkozni kezdesz egy újabb plafonbeom- lásért, ami meggyorsíthatná végedet. Kalan- dod itt véget ér.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 117,
-        "szöveg" : "Sikerül oldalra gurulnod, és így csak kicsit sérülsz meg. Vesztesz 1 ÉLETERO pontot. Nem vesztegeted az időt, északnak indulsz. Lapozz a 126-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 118,
-        "szöveg" : "Egy három ajtós terembe lépsz be. Azon kívül, amin át beléptél, látsz még egyet a szemközti falon és egyet magad mellett, mely valószínüleg arra megy vissza, amer- röl jöttél, csak esetleg egy másik szintre. Lapozz a 145-re.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 119,
-        "szöveg" : "Ahogy ujjadra húzod a gyürüt, erős, égető érzés tölti el az ujjadat. Vesztesz 1 SZE- RENCSE és 2 ÉLETERO pontot. Megpróbálod lehúzni, de minél jobban rángatod, annál inkább összezsugorodik. Valaha ez volt az Ügyesség Gyürüje, ám egy ősi banya átkot szórt rá, ami nagyjából semlegesítette azon bónuszokat, amiket adott. Ha fel szeretnéd venni a köpenyt, és korábban még nem pró- báltad, lapozz a 12-re. Amennyiben még nem ittad meg a folyadékot, és most fel- hajtanád, lapozz a 71-re. Hogyha bezárnád a csapóajtót és az ajtón kilépve észak felé távoznál, lapozz a 80-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 120,
-        "szöveg" : "Ahogy kinyitod az ajtót, meglepetten pil- lantod meg a csillogó Aranyszobrot egy emelvény tetején! Éppen úgy néz ki, mint amilyennek leírták. Hogy elérd, át kell jut- nod a szobán, melynek padlóját kifeszített drótok futják be össze-vissza, és amik a falban nagyjából mellkas magasságban lévő számszerijakhoz csatlakoznak. Hogyha meg akarsz próbálni bejutni, hogy megszerezd a Szobrot, lapozz a 3-ra. Ha úgy döntesz, hogy ez túlságosan kockázatos lenne, becsuknád magad mögött az ajtót és inkább kelet felé indulnál, lapozz a 28-ra",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 121,
-        "szöveg" : "Nincs más választásod, minthogy a válladdal ronts neki az ajtónak. Nem lesz egy egyszerű feladat, mivel a szegecsek igen hosszúak és hegyesek. Lapozz a 196-ra",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 122,
-        "szöveg" : "Az alagút egy ideig kelet felé folytatódik. végül északra fordul. Ahogy a kanyar felé közeledsz, a szemben lévő falon egy lüktető fényfoltot veszel észre. Óvatosan nézel be balra. Lapozz a 144-re.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 123,
-        "szöveg" : "Nagy nehezen bemászol a lyukba és ereszkedni kezdesz. A levegő hőmérsékleté rohamosan növekedni kezd, és rájössz, hogy nagy hibát követtél el. Egyenesen egy föld-alatti kemence felé tartasz. Lángnyelvek csapnak feléd, ahogy próbálsz visszamászni a lejtőn. Lapozz a 35-re.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 124,
-        "szöveg" : "Az ajtó egy teljesen üres szobába nyílik. A padlón egy nagy lyuk tátong. Ahogy a szélére lépsz és letekintesz, látod, hogy nem túl mély. Egy folyosó indul odalenn, mely szintén északi irányba halad tovább. Hogyha el- hagyod a helyiséget, és folytatod az utadat… Lapozz a 129-re. Ha leereszkedsz az alsóbb szintre, és ott mész tovább, lapozz a 64-re.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 125,
-        "szöveg" : "Egy hosszú lépcsősor lábához érkezel. A fel- felé vezető út korántsem olyan nehéz, mint amitől tartottál. Nyersz 1 SZERENCSE pontot. Lapozz a 142-re.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 126,
-        "szöveg" : "Az alagút északi irányba halad, egy idő után azonban kettéágazik. A jobb oldali alagút olyan meredeken ereszkedik lefelé, hogy még durván faragott lépcsőket is látsz benne. Ha erre akarsz továbbmenni, lapozz a 155-re. Ha a szintben maradó, egyenesen tovább haladó folyosón folytatnád az utad, lapozz a 118-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 127,
-        "szöveg" : "A járat fokozatosan kiszélesedik, és hamarosan egy sziklapárkányra érsz, ami kelet-nyugati irányban fut végig egy magas sziklafal közepén. Tiszta szerencse, hogy nem siettél nagyon, különben most egyenesen a szakadékba zuhantál volna. Hasra fekszel a párkányon és letekintesz a szélén. Messze alattad egy kis hidat látsz, ami sebesen folyó patak felett ível át. Elhátrálsz a széléről. Felnézel, de semmit nem látsz, csak a sötétséget. Nem látod, hogyan tudnál leereszkedni a völgy fenekére, a perem pedig nem messze semmivé keskenyedik mindkét oldalon. Ha nálad van a Lebegés Köpenye lapozz a 23-ra. Ha nincs, lapozz a 62-re.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 128,
-        "szöveg" : "Még élsz! Bármennyire is fáradt vagy, kardod markolatával darabokra zúzod a tükröt. Ebből már nem fog újabb kihívó előlépni. Egy keskeny szirten találod magad, egy magas sziklafal kellős közepén. A barlangüreg plafonja áthatolhatatlan sötétségbe burkolózik. Előtted egy folyó halad keletről nyugatra, felette pedig egy híd ível át. Nem találsz lefelé vezető utat, csak egy vasgyűrűn akad meg a szemed, amit a falba rögzítettek. Hozzákötöd a köteled, majd el- kezdesz lefelé mászni. Tedd próbára SZERENCSÉDET! Ha szerencséd van, lapozz a 48-ra Ha nincs szerencséd, lapozz a 93-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 129,
-        "szöveg" : "Hamarosan egy újabb elágazáshoz érsz. Ha kelet felé mennél tovább, lapozz a 112-re. Hogyha északnak folytatnád az utad, lapozz a 66-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 130,
-        "szöveg" : "Minden erődet összeszedve próbálod megemelni a fülénél fogva, azonban meg sem moccan. Kénytelen vagy feladni a dolgot és északi irányban folytatni az utad. Lapozz a 80-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 131,
-        "szöveg" : "Elmondod a férfinak, hogy nincs nálad a Szobor. Arca kifejezéstelen, amikor meg- szólal. Rendben van. Kövess Meg- fordul, és egy csigalépcsőn elindul fölfelé. Nincs választásod, kénytelen vagy követni. A lépcső egy pódiumon ér véget, és boldog- sággal tölt el, hogy ismét börödön érezheted a nap sugarait, a szellöt. Mintha egy éve nem jártál volna a felszínen. Lapozz a 26-ra.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 132,
-        "szöveg" : "A víz elsodor a szikla mellett, és bármenynyire is igyekszel, nem tudod elkapni. Próbálsz az áramlattal együtt úszni, abban bízva, hogy végül a partra vet téged, am miközben a barlangüreg nyugati fala felé közeledtek, kénytelen vagy rájönni, hogy a folyam eltűnik egy keskeny alagútban. Ha a felszinen maradsz, csúnyán be fogod verni a fejed a plafonba, úgyhogy mély levegőt veszel és lebuksz. Az áramlat magával sodor az alagútba, és többé nem bukkansz eló. Kalandod itt véget ér",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 133,
-        "szöveg" : "Kardoddal széttöröd a zárat és kitárod a cella ajtaját. Szabad vagy. Most pedig gyorsan mondd el, hol va.... A férfi věz naságához képest meglepo fürgeséggel rád ugrik és kicsavarja kezedból a kardodat. Ezután a gyomrodba szúrja saját fegyvered, és csuklójának egy csavarásával kibelez. Nem lett volna szabad megbiznod egy bü nözőben. Kalandod itt ocsmány véget ér",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 134,
-        "szöveg" : "Valamennyi mágia még van a Gyürüdben, ami figyelmeztet, hogy a szoba átkutatása elött próbálj meg meggyőződni arról, hogy nincs-e benne csapda. Sikerül kitapogatnod egy alig észrevehető, hajszálvékony rést a köpadlóban, ezért úgy döntesz, nem koc- káztatod meg, hogy belépj. Lapozz a 154-re.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 135,
-        "szöveg" : "Felnevetsz a gondolatra, hogy egy ilyen vénséges, törékeny ember árthatna neked, miután annyi veszélyt sikerült túlélned. Dühödt kiáltással felemeled kardodat, hogy egyetlen csapással leszeld az alak fejét a nyakáról. A férfi a lábadra mutat, melyek egyból ólomnehézzé változnak. Képtelen vagy megmozditani őket. Bár minden izmod megfeszül, combod megkeményedik, hátad merevvé válik, felemelt karjaid meg- szilárdulnak. Csapás közben megdermedve rémülten nézed, ahogy az idős férfi hozzád lép és csontos ujjával megkocogtatja az arcod. Semmit nem érzel, de hallod a fém és szikla jellemző hangját, mikor gyürüi az orrodnak ütödnek. Kétségbeesetten próbál va menekülni, még egy utolsó lélegzetet veszel, mielőtt a szived kövé válik. Kalan- dod itt véget ér.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 136,
-        "szöveg" : "Visszatérsz a korábbi elágazáshoz. Előtted áll az ajtó, amin át beléptél. Arra nem me- hetsz tovább, igy északra fordulsz. Lapozza 172-re.",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 137,
-        "szöveg" : "Elég hosszú ideje barangolsz már az alagutakban, és kezdesz kétségbe esni, mikor az északi falon egyszer csak egy ajtó buk- kan fel. Ha be akarsz nyitni rajta, lapozz a 120-ra. Ha kelet felé mennél tovább, lapozz a 28-ra",
+        "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
     {
         "szint" : 138,
-        "szöveg" : "Kardodhoz kapsz, de elkéstél. Az állat meg- hallotta a zajt és felébredt. Rémülten nézed, ahogy először egy, majd két pofa emelkedik fel, hogy a levegőbe szagoljon. Ez nem egy egyszerű kutya, vagy netin farkas. Ez egy rémséges Xlaia, ami legjobb tudomásod szerint körülbelül száz éve halt ki. A falhoz ugrasz, mert tudod, hogy védened kell majd hátadat, és előhúzott karddal készülsz fel a lény támadására. A Xlaia morogva ugrik ki kosarából. Mindkét vicsorgó pofából sárga agyarak lógnak eló, melyeken még ott pi- roslik legutóbbi chédjük vére. Hogy még rosszabb legyen a helyzet, a lény szájaiból hosszú, nyálkás szálakban lóg a nyál, ami azt jelenti, hogy ez a fenevad veszett! Bár lenne nálad némi viz, hogy távol tartsd magadtól, ahogy a fenti világban is tennéd. A teremtmény jobbra-balra lengeti fejeit. miközben közeledik feléd. Meg kell küz dened vele!",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 139,
-        "szöveg" : "Miközben felhajtod a szintelen és szagtalan folyadékot, azonnal érzed, hogy felfrissülsz (nyersz 1 ÉLETERŐ pontot). Hogyha még nem tetted, és most szeretnéd meginni a második üveg tartalmát, lapozz a 150-re. Ha a harmadik fiolával próbálkoznál, lapozz a 197-re. Ha folytatni akarod az utad kelet felé, lapozz a 29-re.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 140,
-        "szöveg" : "Felkészülsz az ütközetre, miközben a két Denevér zuhanórepülésben közelit feléd Hogyan is remélheted, hogy kardoddal képes leszel felvenni velük a harcot? Meg kell próbálnod a szoba egy másik részébe csalogatnod őket. Hogyha a pajzsod a levegőbe hajitanád, talán azt hinnék, hogy az egy másik áldozat. Bármit is teszel, egyesével kell megküzdened velük.
-
-        Első Denver
-        Második Denevér
-        DYESSES 5
-        LETE7
-        OGTERS 6 ELETRO 6
-        
-        Ha nyersz, lapozz a 160-ra. Ha akarsz, az első kör után a 80-ra lapozva az ajtón át El- menekülhetsz észak felé.
-        ",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 141,
-        "szöveg" : "A járat hamarosan egy ajtóban ér véget. Ha ki szeretnéd nyitni és belépnél rajta, lapozz a 107-re. Ha nem akarod tudni, mi vár rád odabenn és inkább visszamennél az elága- záshoz, hogy kelet felé folytasd az utad, lapozz a 122-re",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 142,
-        "szöveg" : "A lépcsősor végül egy járatba torkollik, ami kiszélesedik. Lélegzetelállító táj tárul a szemed elé. A folyosó egy széles szirtben ér véget, egy hatalmas barlangüreg falának kellős közepén. Óvatosan a szegély szélé- hez lépsz és letekintesz. Az egyik oldalon sziklába vájt lépcsősort pillantasz meg, ami egészen a barlang több száz méter mélyen lévő aljáig ereszkodik lefelé. Odalen egy gyors folyású folyót látsz, amit ha el akarsz érni, kénytelen leszel cikkcakkban lemászni a semmilyen védelmet nem adó lépcsőkön Az üreg olyan hatalmas, hogy saját légköre van. Most épp felhők gyülekeznek a fejed felett, melyekből időnként villámok csap- nak elő. Ez az egyetlen lehetőséged a lo- jutásra, úgyhogy nagyon óvatosan haladsz. Végül földet érsz. Lapozz a 27-re.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 143,
-        "szöveg" : "A keleti falon egy ajtó bukkan fel. Erős zárt látsz rajta, és túlságosan masszív ahhoz, hogy csak úgy betörhesd. Ha van nálad egy Bronz Kules, lapozz a 70-re. Ha nincs, úgy kénytelen vagy folytatni az utad - lapozz a 106-ra",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 144,
-        "szöveg" : "Mikor már félúton jársz a fényfolt felé, a talaj megnyilik alattad, de még az elött sikerül visszalépned, hogy te is beleesnél - korábbi óvatosságod meghozta gyümölcsét. Ahogy közelebbról is megvizsgálod, meg- állapítod, hogy egy kis, kör alakú verem az a padló kellős közepén. Rozoga létra fut lefelé végig az oldalán, de vagy túl sötét van, vagy túl mély lyuk, mert nem látod az alját. Ha szét akarsz nézni benne, lapozz a 7-re. Ha inkább átugornád és kiderítenéd, mi a fényfolt forrása, lapozz a 96-ra",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 145,
-        "szöveg" : "A helyiség közepén egy 30 Aranytallérból épített csillogó kupac áll. Óvatosan, az esetleges csapdákra odafigyelve teszed öket zsebre. Ha további érmék után akarod át- kutatni a sarkokat, lapozz a 36-ra. Hogyha inkább távoznál az északi ajtón át, lapozz a 98-ra",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 146,
-        "szöveg" : "Hamarosan egy ajtóhoz érsz, ami a nyugati falból nyilik. Ahogy végighúzod rajta a kezed, a kilincset keresve, egy keresztet sikerül kitapintanod rajta, amit nem túl mélyen véstek bele. Ha ki akarod nyitni az ajtót, lapozz az 51-re. Ha folytatnád az utad észak felé, lapozz a 80-ra.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 147,
-        "szöveg" : "A járat egy ajtóban végződik. Hogyha ki szeretnéd nyitni, lapozz a 22-re. Ha visszatérnél az elágazáshoz, és észak felé folytat nád az utad, lapozz a 108-ra.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 148,
-        "szöveg" : "Csaknem megfulladsz, de kitartasz. Dobj két kockával. Ha az eredmény kevesebb vagy ugyanannyi, mint teves pontjaid száma, lapozza 103-ra. Ha nagyobb, lapozz a 15-re.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 149,
-        "szöveg" : "Megkérdezed a fogolytól, mondana-e neked valami hasznosat a szabadságáért cserébe. A fickó szemei felcsillannak, és azonnal bólint. Elmondhatom neked, merre találod a legnagyobb rubint, amit valaha láttál - mondja. De elöbb eressz ki innen. - Ha teljesited a kérését, lapozz a 133-ra. Hogyha inkább végeznél vele, lapozz a 24-re. Ha itt akarod hagyni és az északi ajtón át távoznál lapozz a 72-re.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 150,
-        "szöveg" : "Ajkadhoz emeled az üvegesét és megiszod a tartalmát. Mennyei ize van, így ujjaddal az utolsó cseppet is kitörlöd. Ekkor forogni kezd körülötted a járat, te pedig összeesel. Az üvegben Altató Ital volt. Orákon át heversz a padlón onkivületben, kiszolgál tatva a tolvajoknak és más veszedelmeknek. Mikor felébredsz, még mindig elég fáradt- nak érzed magad, bár a fejed teljesen ki- tisztult. A soron következő csaták során a fáradtság miatt 1-el csökkentened kell majd Támadóerődet. Hogyha még nem tetted és most meg akarod inni az első üvegben lévő folyadékot, lapozz a 139-re. Ha a harmadik fiola tartalma érdekelne, lapozz a 197-re Ha folytatod az utad kelet felé, lapozz a 29-re.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 151,
-        "szöveg" : "Próbálkozásod, hogy biztonságba juss, tejes mértékben hiábavalónak bizonyult. Egy szikladarabon állsz, melynek tetején har- mineméternyit zuhantal lefelé. Miközben azon töprengsz, hogyan juthamál ki, rájössz hogy a kút alját, ahol állsz, finom, félig folyékony homok kezdi betölteni. Először lábfejedet temeti be, majd térded, és mire eléri a mellkasodat, karjaidat már nem tudod megemelni. A körülötted feszülő nyomás összezúz, öt perc múlva pedig már tel- jesen elborít a homok. Kalandod itt véget ér",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 152,
-        "szöveg" : "A járat, melyen most haladsz, elég keskeny, de még át tudod magad préselni a falak között. Balodon egy alagút fut be a folyo- sóba, te azonban eltökélten mész tovább egyenesen. A járat szélesedni kezd, repedések és ha- sadékok jelennek meg a falakon. Zörgö hang szürödik ki valahonnan, és az egyik lyukból két különös teremtmény ugrik elő. Az egyértelműen látszik, hogy az alvilág lakói, mivel börük teljesen fehér, vad szo- meik pedig rózsaszínück. Fejüktől a farkukig hosszú, veszedelmes tüskék boritják hátukat, Lapozz a 99-re.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 153,
-        "szöveg" : "A járat szélesedni kezd, repedések és hasadékok jelennek meg a falakon. Zörgő hang szűrődik ki valahonnan, és az egyik lyukból két különös teremtmény ugrik elő. Az egyértelműen látszik, hogy az alvilág lakói, mivel bőrük teljesen fehér, vad szemeik pedig rózsaszínüek. Fejüktől a farkukig hosszú, veszedelmes tüskék borítják hátukat,
-        melyek járás közben jobbra-balra inganak. A lények hátat fordítanak neked, és már kezdesz megörülni, hogy megijedtek tőled és elmenekülnek. Mekkorát tévedtél! Ezek mérges Sündisznók, és épp arra készülnek. hogy halálos tüskéket beléd Köpjék. Egymás után küzdj meg velük.
-        
-        Első Sündisznó
-        Második
-        Sündisznó
-        YESSE 7 ELETRO 5
-        OGYESHEG 8 ÉLETERO 5
-        
-        Mivel a tüskék nagyon mérgezőek, valahányszor beléd áll valamelyik, a szokásos 2 helyett 3 ELETER pontot kell levonnod magadtól. Lapozz a 42-re",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 154,
-        "szöveg" : "Bezárod magad mögött az ajtót és tovább mész kelet felé. Lapozz a 16-ra",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 155,
-        "szöveg" : "A lejtő elég meredek, és már régóta mész, mikor a lépcsők megszűnnek, a járat pedig élesen balra kanyarodik. Fárasztó volt idáig az út, ezért lankad a figyelmed, mikor egy mocskos, dagadt Hobgoblin ugrik előd. Bandzsa szemeivel - az egyik bíbor, a másik zöld - méreget téged. Ruhái ugyanolyan koszosak, mint ő maga, ráadásul eléggé szakadtak is, a kezében lévő kard azonban borotvaéles, és látszik, hogy gondosan karban tartja. Előre nyújtott fegyverrel közeledik feléd.
-
-        Hobgoblin
-        ÜGYESSÉG 7
-        ÉLETERO 8
-        
-        Hogyha gyözöl, lapozz az 50-re. Ha rosszul alakul a harc, az első Harci Kört követően el tudsz futni ellenfeled mellett, tovább az északra vezető lépcsőkön ha igy tennél, lapozz a 143-ra.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 156,
-        "szöveg" : "A férfi hűvösen mér végig. Hazudsz! - mondja. És a hazugok büntetést érdemelnek. Elsétál melletted a folyosón. Nyugtalanul töprengsz azon, vajon hogy is érthette, amit mondott. Hamarosan megtudod. A története ugyan igaz volt, azt azonban nem mondta el, mi volt a foglalkozása a fenti világban, hogy miért került ide: zsebtolvaj volt! 2 adag élelmedet nyúlta le a fickó. Vesztesz 1 SZERENCSE pontot. Ezután folytatod utadat kelet felé. Lapozz az 57-re.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 157,
-        "szöveg" : "Az ajtó egy kicsi, szellősen berendezett szobába nyílik. Hangos horkolás hangját hallod, melynek forrása, úgy tűnik, egy szék, mely háttal áll neked: ritka, szürke színű hajtincset vélsz látni felette. Óvatosan megkerülöd az előtted álló asztalt és megvizsgálod az alvó férfit. Egy idős férfi az, aki összefont kézzel alszik a kényelmetlen ülő- alkalmatosságon. Az északi falon egy újabb ajtót látsz. Ha ez utóbbin át távoznál, lapozz a 180-ra. Hogyha távozol a helyiségből és a folyosón mész tovább, lapozz a 125-re. Ha előbb szétnéznél idebenn, lapozz a 166-ra.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 158,
-        "szöveg" : "Az ajtó becsapódik, te pedig végre felfedezed a füttyszerű sóhajok és susogások forrását. Előtted, a padlón guggolva megpillantod a Galont, a Madárembert. Börszárnyai két oldalt széttárva állnak; kezének éles karmai feléd mutatnak. Azonnal felismered zöldes bőrét, és tudod, hogy izmos karjaival és hatalmas szárnyaival megpróbál majd megfullasztani. Előhúzod kardodat, melynek látványára ellenfeled azonnal őrjöngeni kezd, hiszen éhsége kielégíthetetlen. Ez a harc lesz az egyik legnehezebb, amit meg kell itt vívnod.
-
-        Galon
-        Ha nyersz, lapozz a 61-re.
-        ÜGYESSÉG 12
-        ÉLETERO 8",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 159,
-        "szöveg" : "Elfordítod a kulcsot a vasrács zárjában. A szárnyak nem nyílnak ki, ahogy arra számítani lehetne, és erősen kell tolnod, hogy megmozdítsd. Végül a nagy nekifeszüléstől felpattan, te pedig a lendülettől hajtva beesel rajta. Legnagyobb rémületedre azonban a helyiségnek, melybe bejutottál, nincsen padlója! Ha rajtad van a Lebegés Köpenye lapozz a 43-ra. Ha nincs, zuhanni kezdesz lefelé - lapozz a 115-re.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 160,
-        "szöveg" : "Lenézel ellenfeleid elernyedt tetemeire. Holtukban még ocsmányabbak, mert a vicsorgás gonosz pofájukra fagyott. A törmelékek között első ránézésre nem sok érdekes dolgot találsz. Ha alaposabban is át akarod vizsgálni, lapozz a 37-re. Ha inkább távoznál, és észak felé folytatnád az utad, lapozz a 80-ra.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 161,
-        "szöveg" : "A járat egy négyzet alakú szobában ér véget, melyet a rothadó hús szaga tölt meg. A padló nagy részét két óriási, bugyborékoló sármedence teszi ki. Egy keskeny kifutómely nem sokkal szélesebb, mint a lábfejed halad középen, a terem széleit pedig hasonlóan keskeny szegélyek futják körbe. Mindhárom út egy nyílásban fut össze az északi falon. Ha a jobboldalin haladnál végig, lapozz a 181-re. Ha a bal- oldalin, lapozz a 193-ra. Amennyiben a középső utat választanád, lapozz a 171-re.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 162,
-        "szöveg" : "Visszanyered egyensúlyod és a rubinért nyúlsz. Lapozz a 46-ra.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 163,
-        "szöveg" : "Követed az alagutat, mely szinte azonnal egy újabb szobába torkollik. Ennek a padlója jóval lentebb áll, mint a bejárat, ahol most állsz, padlóját és kör alakú falát pedig elég magasan kőlapok borítják. Ezekre különös, egymásba fonódó mintákat festettek, melyek mintha valamilyen mágikus vagy misztikus jelentőséggel rendelkeznének. A helyiség színültig van telve kristálytiszta vízzel, és mivel eléggé mocskos vagy, meg meleged is van, nem tudsz ellenállni a kísértésnek. Levetkőzöl, és miután a biztonság kedvéért a fa ajtófélfába állítod a kardodat, elmerülsz a vízben. Miután percekig boldogan pancsolsz idelenn, és teljesen felfrissülsz, megfordulsz, hogy kimássz. Ekkor veszed észre a víz alatt lévő másik kijáratot. Lemerülsz, hogy alaposabban is szemügyre vedd. A kilincset nem tudod lenyomni, ami azért szerencse, mert ha leeresztenéd a vizet, akkor elég bajos lenne kijutnod a medencéből. Nem találsz itt semmi más érdekeset, igy felöltözöl és távozol. Visszatérsz a vermes ajtóhoz. Ha most le akarsz itt ugrani, lapozz a 185-re. Ha inkább visszatérnél a korábban látott elágazáshoz és nyugat felé folytatnád az utad, lapozz a 168-ra.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 164,
-        "szöveg" : "Ahogy lenyomod a kilincset, az ajtó kicsapódik, mintha valami hatalmas súly nyomná ki a túloldalon. Azonnal rájössz, hogy nagy hibát vétettél, mikor vizsugarak kezdenek el kispriccelni az apró réseken. Kétségbeesetten próbálod újra bezárni a kitörni készülő víztömeget ám hamar rájössz, hogy erre semmi esélyed, igy más választásod nem lévén menekülni próbálsz. Az ajtó kicsapódik, a szűk járatban pedig esélyed sincs rá, hogy túléld a dolgot. A víz teljes tömege rád zúdul, te pedig azon nyomban megfulladsz. Kalandod itt véget ",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 165,
-        "szöveg" : "A sötétben megbotlasz és elterülsz a padlón Sikerült csúnyán megütnöd magad. Dobj egy kockával, hogy megtudd, hány ÉLETERŐ pontot vesztettél. Előre nyújtott kezeid szinte ugyanebben a pillanatban falba ütközik. Zsákutcába jutottál. Miközben alagút falát keresed, filmes csörgés üti meg füled, lábaddal körbetapogatózva sikerül rálelned egy kis valamire a padlón. Zsebre teszed, majd miután vissztamásztál létrán a fénybe, alaposabban is megvizsgálod. Egy kis Arany kulcs az. Vizaszod azchodbe és észak fold induh Lapozz a 96-ra.",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 166,
         "szöveg" : "",
         "akció" : {
             "ugrás" : [41]
         }
     },
-    {
-        "szint" : 167,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 168,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 169,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 170,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 171,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 172,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 173,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 174,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 175,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 176,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 177,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 178,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 179,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 180,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 181,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 182,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 183,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 184,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 185,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 186,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 187,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 188,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 189,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 190,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 191,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 192,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 192,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 193,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 194,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-    {
-        "szint" : 195,
-        "szöveg" : "",
-        "akció" : {
-            "ugrás" : [41]
-        }
-    },
-
-
 
 
 ]

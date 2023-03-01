@@ -12,16 +12,21 @@ import json
 with open('kaland.json', 'r', encoding='utf-8') as f:
     kartyak = json.load(f)
 
+k = -1
+vege = False
+while not vege:  
+
 cím = kartyak["cim"]
 bevezeto = kartyak["bevezeto"]
 ugrasss = kartyak["kartyak"][0]["szoveg"]
+akcio = kartyak["kartyak"][k]['akcio']
+print(akcio)
 
 def DoboKocka():
     dobas = random.randint(1,6)
     return dobas
 
-ugras= []
-probaszerencsee = False
+
 class Harcos:
     def __init__(self, nev, ugyesseg, eletero, szerencse, depresszio, inventory, arany, liquid, csillogo, kaja):
         self.nev = nev
@@ -64,12 +69,7 @@ class Enemy:
         self.ugyesseg = DoboKocka + DoboKocka 
         self.eletero = DoboKocka + DoboKocka 
 
-tomó= Harcos("Tomó")
-
-if kartyak["akcio"["tipus"]]== "harc":
-    tomó.harcol(kartyak["ellenfel"])
-
-
+                                                                #innentől karcsi dolga "DO NOT ENTER"
 
 class CustomButton(tk.Button):
     def __init__(self, master=None, **kwargs):
@@ -107,3 +107,4 @@ class MyApp:
 root = tk.Tk()
 app = MyApp(root)
 root.mainloop()
+
