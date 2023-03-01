@@ -63,6 +63,18 @@ class Harcos:
             probaszerencsee = False
             self.szerencse -= 1
 
+    def szerencse+(self):
+
+    def szerencse-(self):
+
+    def eletero+(self):
+
+    def eletero-(self):
+
+    def szerencse+(self):
+
+    def halál(Self)
+
 class Enemy:
     def __init__(self, nev, ugyesseg,eletero):
         self.name = nev
