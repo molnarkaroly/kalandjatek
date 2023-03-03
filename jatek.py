@@ -40,7 +40,7 @@ class Harcos:
         self.csillogo = csillogo
         self.kaja = kaja 
 
-    def harc(self, enemy ):
+    def harc(self, enemy):
         while self.health > 0 and enemy.health > 0:
             enemy.health -= self.strength
             if enemy.health <= 0:
@@ -64,24 +64,25 @@ class Harcos:
             self.szerencse -= 1
 
     def ugyesseg+(self):
-        self.ugyesseg = self.ugyesseg + ugyi+
+        self.ugyesseg = self.ugyesseg + ugyesseg+
 
     def ugyesseg-(self):
-        self.ugyesseg = self.ugyesseg + ugyi-
+        self.ugyesseg = self.ugyesseg + ugyesseg-
 
     def eletero+(self):
-        self.eletero = self.eletero + elet+
+        self.eletero = self.eletero + eletero+
 
     def eletero-(self):
-        self.eletero = self.eletero - elet-
+        self.eletero = self.eletero - eletero-
 
     def szerencse+(self):
-        self.szerencse = self.szerencse + szeri+
+        self.szerencse = self.szerencse + szerencse+
 
     def fix(self):
         if fix == True:
-            szerencse < 6
-            szerencse = 6
+            self.szerencse < 6
+            self.szerencse = 6
+
 
     def halál(self):
         szöveg = " Játékod itt véget ért meghaltál XDDDDDDDDDDDD (sz@r lehet)"
