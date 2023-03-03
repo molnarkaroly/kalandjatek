@@ -4,6 +4,12 @@ from tkinter.ttk import *
 import tkinter as tk
 import json
 
+with open('kartyak.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
+
+
+
+
 class CustomButton(tk.Button):
     def __init__(self, master=None, **kwargs):
         super().__init__(master, **kwargs)
@@ -12,12 +18,14 @@ class CustomButton(tk.Button):
     def on_button_click(self):
         szoveg.configure(state='normal')
         szoveg.delete(1.0, END)
-        szöveg= {self['text']}
+        e = int(self['text'])
+        szöveg= data[e-1]["szoveg"]
         szoveg.insert("end", f'{szöveg}')
+        
         
         #szoveg.configure(state='disabled')
 
-szintek = [15, 65, 48]
+szintek = [1, 2, 3, 4,]
 class MyApp:
     def __init__(self, master):
         self.master = master
@@ -36,7 +44,7 @@ class MyApp:
 
     def create_buttons(self):
         for i in self.szintek:
-                button = CustomButton(self.master, text=f"{i}", font=("diediedie", 30))
+                button = CustomButton(self.master, text=i, font=("diediedie", 30))
                 button.pack(pady=5)
 
 root = tk.Tk()
