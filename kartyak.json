@@ -5,17 +5,27 @@
         "akcio":
         {
           "tipus": "ugrás",
-          "ugras": [41]
+          "ugras": [1]
         }
       },
-    {   "sorszam": 2,
-        "szoveg": "Ez egy szint 2-es kartya.",
-        "akcio": "Vegyen el 1 ermet a kincsesladajabol."
-    },  
-    {   "sorszam": 3,
-        "szoveg": "Ez egy szint 2-es kartya.",
-        "akcio": "Vegyen el 1 ermet a kincsesladajabol."
-    }
+      {
+        "sorszam": 2,
+        "szoveg": "Belöknek a lenti alagútba, és rád zárják az ajtót, kizárva ezzel a nyíláson beszűrődő természetes világosságot. Innentől kezdve kizárólag a falra rögzítettfáklyáktól remélhetsz valamennyi fényt. Ahogy szemed hozzászokik a homályhoz, látod, hogy az alagút észak felé indul. Nagyot sóhajtesz a dolog igazságtalansága felett, majd elindulsz abba az irányba.",
+        "akcio":
+        {
+          "tipus": "ugrás",
+          "ugras": [2, 1]
+        }
+      },
+      {
+        "sorszam": 3,
+        "szoveg": "Belöknek a lenti alagútba, és rád zárják az ajtót, kizárva ezzel a nyíláson beszűrődő természetes világosságot. Innentől kezdve kizárólag a falra rögzítettfáklyáktól remélhetsz valamennyi fényt. Ahogy szemed hozzászokik a homályhoz, látod, hogy az alagút észak felé indul. Nagyot sóhajtesz a dolog igazságtalansága felett, majd elindulsz abba az irányba.",
+        "akcio":
+        {
+          "tipus": "ugrás",
+          "ugras": [1]
+        }
+      }
 ]
 
 

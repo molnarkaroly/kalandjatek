@@ -1,14 +1,12 @@
 import tkinter as tk
 from tkinter import *
 from tkinter.ttk import *
-import tkinter as tk
 import json
 
 with open('kartyak.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
-szintek = [1, 2, 3, 4,]
-
+szintek = [1, 2, 3]
 
 class CustomButton(tk.Button):
     def __init__(self, master=None, **kwargs):
@@ -16,27 +14,27 @@ class CustomButton(tk.Button):
         self['command'] = self.on_button_click
 
     def on_button_click(self):
+        global szintek
         szoveg.configure(state='normal')
         szoveg.delete(1.0, END)
         e = int(self['text'])
         szöveg= data[e-1]["szoveg"]
         szoveg.insert("end", f'{szöveg}')
-
-        
-        #szoveg.configure(state='disabled')
-        e = int(self['text'])
-        if data[e-1]["tipus"] == "ugrass":
-            szintek= data[e-1]["tipus"]['ugras']
-
+        if data[e-1]["akcio"]['tipus'] == "ugrás":
+            szintek = [i for i in range(1, len(data[e-1]["akcio"]["ugras"])+1)]
+            self.master.destroy()
+            self.master = tk.Tk()
+            app = App(self.master)
+            app.szint_szovegek()
+            app.create_buttons()
+            self.master.mainloop()
 
 class App:
     def __init__(self, master):
         self.master = master
         self.master.title("Kalandjáték")
         self.master.configure(background="#261401")
-
         self.szint_szovegek()
-        self.create_buttons()
 
     def szint_szovegek(self):
        global szoveg
@@ -45,6 +43,7 @@ class App:
        szoveg.insert("end", "Ez egy szöveg mező.")
 
     def create_buttons(self):
+        global szintek
         frame = Frame(root)
         frame.pack(side=TOP, pady=10,)
 
@@ -54,4 +53,5 @@ class App:
 
 root = tk.Tk()
 app = App(root)
+app.create_buttons()
 root.mainloop()
