@@ -20,15 +20,13 @@ class CustomButton(tk.Button):
         e = int(self['text'])
         szöveg= data[e-1]["szoveg"]
         szoveg.insert("end", f'{szöveg}')
-        if data[e-1]["akcio"]['tipus'] == "ugrás":
+        if data[e-1]["akcio"]["tipus"] == "ugrás":
             szintek = [i for i in range(1, len(data[e-1]["akcio"]["ugras"])+1)]
             self.master.destroy()
             self.master = tk.Tk()
             app = App(self.master)
-            app.szint_szovegek()
             app.create_buttons()
             self.master.mainloop()
-
 class App:
     def __init__(self, master):
         self.master = master
