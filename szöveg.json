@@ -638,28 +638,34 @@
         "szint" : 73,
         "szöveg" : "Továbbra is nyugati irányba haladva észreveszed, hogy a járat egy kisebb szikla halomban ér véget. Csákány és ásó nélkül itt esélyed sem lenne átjutni. Ahogy megfordulsz, hogy visszatérj az előző elágazáshoz. egy sötétebb folt egy újabb észak felé vezető, alagút jelenlétét árulja el. Úgy döntesz erre mész tovább. Lapozz a 174-re",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [174]
         }
     },
     {
         "szint" : 74,
         "szöveg" : "Átlépsz a két Iszapsárkány tetemen és a szükségesnél óvatlanabbul végigsietsz a keskeny úton. Egy rémisztő pillanatra megbillensz az egyik medence irányába, mikor lábad megcsúszik egy kődarabon, de végül némi kapálózás segítségével sikerül egy újabb lépést tenned, és valamivel stabilabb talajt érned. Lapozz a 63-ra",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [63]
         }
     },
     {
         "szint" : 75,
         "szöveg" : "Túl nehéz, vagy az ingatag építménynek, ami összetörik a lábad alatt. Egyenesen a vízbe zuhansz, és kénytelen vagy kiúszni belőle, hogy meg ne fulladj. Az áramlat azonban nagyon erős. Lapozz a 148-ra",
         "akció" : {
-            "ugrás" : [41]
+            "ugrás" : [148]
         }
     },
     {
         "szint" : 76,
         "szöveg" : "Homokos parton találod magad, melynek félhold alakja van. Az előtted lévő sziklafal egy kis alkóvot alkot, és három ajtót foglal magában. Ezek közül választhatsz majd, mikor eljön a távozás ideje, előtte azonban még el kell döntened, át akarod-e kutatni a folyópartot ékkövek vagy aranyérmék után. Hogyha az északi ajtón át távoznál, lapozz a 87-re. Ha a nyugatin lépnél be, lapozz a 6-ra. Ha a keletivel próbálnál szerencsét, lapozz a 111-re. Ha előbb átkutatnád a partot, lapozz az 53-ra.",
         "akció" : {
-            "ugrás" : [41]
+            "válaszút" : {
+                "opció 1" :"észak[1]",
+                "opció 2" : "nyugatin[2]",
+                "opció 3" : "kelet[3]",
+                "opció 4" : "part[4]",
+                "ugrás" : [87,6,111,53]
+            }
         }
     },
     {
@@ -673,6 +679,7 @@
         "szint" : 78,
         "szöveg" : "A számszeríj nem volt tökéletesen beállítva, így ahelyett, hogy halálos sebet okozott volna fejeden vagy nyakadon, a vesző csupán hal válladba áll bele elég mélyen. Lehetett volna rosszabb is, de még így is vesztesz 4 ÉLETERŐ pontot. Kirántod a lövedéket, szakítasz ruhádról némi gézt és szorosan bekötöd magad, hogy el ne vérezz. Hangosan átkozódva indulsz ismét észak felé, az egyetlen irányba, amerre még teheted. Lapozz a 89-re.",
         "akció" : {
+            "-HP":
             "ugrás" : [41]
         }
     },
