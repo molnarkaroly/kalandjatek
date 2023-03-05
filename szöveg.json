@@ -555,10 +555,7 @@
         "szint" : 66,
         "szöveg" : "Egy lépcsősorhoz érsz, és már épp lefelé indulnál rajtuk, mikor a hátad mögött valami zaj veszélyre figyelmeztet. Megperdülsz, és egy alacsony, köpcös alakot pillantasz meg. Ocsmány arca undok vigyorra húzódik. Háta mögül előkap egy tüskés buzogányt, majd a hírhedt Sikító Szellemet is megszégyenítő csataüvöltéssel megpörgeti, és a karodba vágja. Vesztesz 1 ÉLETERŐ pontot. Meg kell küzdened vele.",
         "akció" : {
-            "harc" : "Törpe Ügyesség-8 Életerő-5",
-            "Ellenfelnev" : {},
-            "Ellenfelugyi" : {},
-            "Ellenfelelet" : {},
+            "harc" : ["Törpe", 8, 5],
             "ugrás" : [118]
         }
     },
