@@ -180,10 +180,11 @@ while not vege:
         print("https://media.giphy.com/media/ZcUGu59vhBGgbBhh0n/giphy.gif")
 
     if data[e-1]["tipus"]=="tválasztás":
-        if vane(data[e-1]["kartyak"]["akcio"]["tárgyválasztaás"],inventory)== True:
-            szint = tszint
+        if vane(data[e-1]["kartyak"]["akcio"]["tárgyválasztaás"],inventory)== False:
+            tszint = data[e-1]["Cards"]["akcio"]["ugrás"][0]
+            
         else:
-            print("nincs ilyen szint")
+            tszint = data[e-1]["akcio"]["ugrás"][1]
             continue
 
 
