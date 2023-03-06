@@ -11,16 +11,16 @@ import json
 
 with open('kaland.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
+szint = data["szint"]
+e = szint
 
-k = -1
 vege = False
-while not vege:  
 
-    cim = data["cim"]
-    bevezeto = data["bevezeto"]
-    ugrasss = data["kartyak"][0]["szoveg"]
-    akcio = data["kartyak"][k]['akcio']
-    print(akcio)
+cim = data["cim"]
+bevezeto = data["bevezeto"]
+ugrasss = data["kartyak"][0]["szoveg"]
+akcio = data["kartyak"][e]['akcio']
+print(akcio)
 
 def DoboKocka():
     dobas = random.randint(1,6)
@@ -60,7 +60,8 @@ class Harcos:
 
 
     def ugyessegm(self):
-        self.ugyesseg = self.ugyesseg + ugyessegm
+        e = szint
+        self.ugyesseg = self.ugyesseg + data[e-1][]
 
     def ugyessegn(self):
         self.ugyesseg = self.ugyesseg + ugyessegn
@@ -72,7 +73,11 @@ class Harcos:
         self.eletero = self.eletero - eleteron
 
     def szerencsem(self):
-        self.szerencse = self.szerencse + szerencsem
+        self.szerencse = self.szerencse + data[e-1]["+luck"]
+
+    def szerencsem(self):
+        e = szint
+        self.szerencse = self.szerencse - data[e-1]["-luck"]
 
     def fix(self):
         if fix == True:
@@ -80,8 +85,8 @@ class Harcos:
             self.szerencse = 6
 
 
-    def halál(self):
-        szöveg = " Játékod itt véget ért meghaltál XDDDDDDDDDDDD (sz@r lehet)"
+def halál(self):
+    szöveg = " Játékod itt véget ért meghaltál XDDDDDDDDDDDD (sz@r lehet)"
 
 
 class Enemy:
@@ -99,6 +104,15 @@ class Enemy:
         else:
             probaszerencsee = False
             self.szerencse -= 1
+e = szint
+while not vege:  
+    if data[e-1]["akcio"] ==["halál"]:
+        halál()
+    if data[e-1]["akcio"] ==["ugrás"]:
+        ugrasss= data[e-1]["akcio"]["ugrás"]
+
+    
+
 
 
                                                                 #innentől karcsi dolga "DO NOT ENTER"
