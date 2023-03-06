@@ -9,10 +9,9 @@ import json
 
 
 
-with open('kaland.json', 'r', encoding='utf-8') as f:
 with open('szöveg.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
-<<<<<<< Updated upstream
+
 szint = data["szint"]
 e = szint
 
@@ -28,9 +27,13 @@ def DoboKocka():
     dobas = random.randint(1,6)
     return dobas
 
-
+inventory= ['Vaskard', 'Bőrvért']
+arany= 0
+liquid= 5
+csillogo= 1
+kaja= 5
 class Harcos:
-    def __init__(self, nev, ugyesseg, eletero, szerencse, depresszio, inventory, arany, liquid, csillogo, kaja):
+    def __init__(self, nev): #ugyesseg, eletero, szerencse, depresszio, inventory, arany, liquid, csillogo, kaja
         self.nev = nev
         self.ugyesseg = DoboKocka() + 6
         self.eletero = DoboKocka() + DoboKocka() + 12
@@ -43,7 +46,72 @@ class Harcos:
         self.kaja = kaja 
 
 
-    def harc(self, enemy):
+    
+Tomó= Harcos("Tomó")
+
+
+
+def ugyessegm(self):
+        e = szint
+        self.ugyesseg = self.ugyesseg + data[e-1][]
+
+def ugyesseg1(self): 
+        self.ugyesseg = self.ugyesseg + ugyesseg1
+
+
+def ugyessegn(self):
+        self.ugyesseg = self.ugyesseg + ugyessegn
+def ugyesseg2(self):
+        self.ugyesseg = self.ugyesseg + ugyesseg2
+
+def eleterom(self):
+        self.eletero = self.eletero + eleterom
+def eletero1(self):
+        self.eletero = self.eletero + eletero1
+
+def eleteron(self):
+        self.eletero = self.eletero - eleteron
+def eletero2(self):
+        self.eletero = self.eletero - eletero2
+
+def szerencsem(self):
+        self.szerencse = self.szerencse + data[e-1]["+luck"]
+
+def szerencsem(self):
+        e = szint
+        self.szerencse = self.szerencse - data[e-1]["-luck"]
+
+def fix(self):
+        if fix == True:
+            self.szerencse < 6
+            self.szerencse = 6
+
+
+
+
+
+class Enemy:
+    def __init__(self, nev, ugyesseg, eletero, sebzes = 2):
+        self.name = data["harc"][0]
+        self.ugyesseg = data["harc"][1]
+        self.eletero =  data["harc"][3]
+        self.sebzes = sebzes
+
+
+e = szint
+
+def vane(ebben,ez):
+    for i in (ebben):
+        if ez == i:
+            return True
+        else:
+            return False
+        
+def halál(self):
+    szöveg = " Játékod itt véget ért meghaltál XDDDDDDDDDDDD (sz@r lehet)"
+    vege= True
+
+def harc(self, enemy):
         while self.health > 0 and enemy.health > 0:
             sebzes = 2
             enemy.health -= sebzes
@@ -57,113 +125,72 @@ class Harcos:
             if self.health <= 0:
                 print(f"{enemy.name} nyert játékod is véget ért")
                 szoveg = (f"{enemy.name} nyert játékod is véget ért")
-                break
+                break   
 
+def probaszerencse(Tomó, szerencse):
+    if DoboKocka() + DoboKocka() <= Tomó.szerencse:
+        Tomó.szerencse -= 1
+        Tomó.sebzes = 1
+        return True
 
+    else:
+        Tomó.szerencse -= 1
+        return False    
 
-<<<<<<< Updated upstream
-    def ugyessegm(self):
-        e = szint
-        self.ugyesseg = self.ugyesseg + data[e-1][]
-=======
-    def ugyesseg1(self): 
-        self.ugyesseg = self.ugyesseg + ugyesseg1
->>>>>>> Stashed changes
-
-    def ugyessegn(self):
-        self.ugyesseg = self.ugyesseg + ugyessegn
-    def ugyesseg2(self):
-        self.ugyesseg = self.ugyesseg + ugyesseg2
-
-    def eleterom(self):
-        self.eletero = self.eletero + eleterom
-    def eletero1(self):
-        self.eletero = self.eletero + eletero1
-
-    def eleteron(self):
-        self.eletero = self.eletero - eleteron
-    def eletero2(self):
-        self.eletero = self.eletero - eletero2
-
-    def szerencsem(self):
-        self.szerencse = self.szerencse + data[e-1]["+luck"]
-
-    def szerencsem(self):
-        e = szint
-        self.szerencse = self.szerencse - data[e-1]["-luck"]
-
-    def fix(self):
-        if fix == True:
-            self.szerencse < 6
-            self.szerencse = 6
-
-
-def halál(self):
-    szöveg = " Játékod itt véget ért meghaltál XDDDDDDDDDDDD (sz@r lehet)"
-
-
-class Enemy:
-    def __init__(self, nev, ugyesseg, eletero, sebzes = 2):
-        self.name = data["harc"][0]
-        self.ugyesseg = data["harc"][1]
-        self.eletero =  data["harc"][3]
-        self.sebzes = sebzes
-
-    def probaszerencse(self, szerencse):
-        if DoboKocka() + DoboKocka() <= self.szerencse:
-            probaszerencsee = True
-            self.szerencse -= 1
-            self.sebzes = 1
-        else:
-            probaszerencsee = False
-            self.szerencse -= 1
-e = szint
 while not vege:  
+    print("data[e-1]["kartyak"]["szint"]")
+    print (data[e-1]["szöveg"])
+
     if data[e-1]["akcio"] ==["halál"]:
         halál()
-    if data[e-1]["akcio"] ==["ugrás"]:
+        continue
+
+    if data[e-1]["akció"]["tipus"] ==["ugrás"]:
         ugrasss= data[e-1]["akcio"]["ugrás"]
+        print(f'merre mész tovább {len(ugrasss)}')
+        tszint= int (input("Melyikre mész tovább?")) #tszint talán szint azt ellenőrzi hogy van e olyan szint a listában
+        if vane(tszint,ugrasss)== True:
+            szint = tszint
+        else:
+            print("nincs ilyen szint")
+            continue
+
+    if data[e-1]["akció"]["tipus"] ==["harc"]:
+        harc(Tomó, data[e-1]["akció"]["harc"])
+        continue
+
+    #if data[e-1]["akció"]["választás"]:
+    #    ugrasss= data[e-1]["akcio"]["ugrás"]
+    #    print(f'merre mész tovább {len(ugrasss)}')
+    #    tszint= int (input("Melyikre mész tovább?")) #tszint talán szint azt ellenőrzi hogy van e olyan szint a listában
+    #    if vane(tszint,ugrasss)== True:
+    #        szint = tszint
+    #    else:
+    #        print("nincs ilyen szint")
+    #        continue
+
+    if data[e-1]["tipus"]=="luckválasztás":
+        if probaszerencse() == True:
+            szint= data[e-1]["akcio"]["ugrás"][0]
+        else:
+            szint= data[e-1]["akcio"]["ugrás"][1]
+    
+    if data[e-1]["tipus"]=="győzelem":
+        print("Győztél!!! nyisd meg ezt a linket")
+        print("https://media.giphy.com/media/ZcUGu59vhBGgbBhh0n/giphy.gif")
+
+    if data[e-1]["tipus"]=="tválasztás":
+        if vane(data[e-1]["kartyak"]["akcio"]["tárgyválasztaás"],inventory)== True:
+            szint = tszint
+        else:
+            print("nincs ilyen szint")
+            continue
+
+
+
+
 
     
 
 
-
-                                                                #innentől karcsi dolga "DO NOT ENTER"
-
-class CustomButton(tk.Button):
-    def __init__(self, master=None, **kwargs):
-        super().__init__(master, **kwargs)
-        self['command'] = self.on_button_click
-
-    def on_button_click(self):
-        print(int(self['text']))
-        szint = int(self['text'])
-
-bevezeto= data["bevezeto"]
-szöveg  = "Szeretném közölni a játékossal, hogy ez a játék Tomó halálával végződik legtöbb esetben csak erős tűrőképességel bíróknak ajánljuk ezt a tartalmat."
-szintek = [1,5,6]
-
-class MyApp:
-    def __init__(self, master):
-        self.master = master
-        self.master.title("Kalandjáték")
-        self.master.configure(background="#261401")
-        self.szintek = szintek
-
-        self.szint_szovegek()
-        self.create_buttons()
-
-    def szint_szovegek(self):
-       text = Text(root, height=10, width=100,font=("Arial", 25))
-       text.pack(pady=10)
-       text.insert("end", szöveg)
-
-    def create_buttons(self):
-        for i in self.szintek:
-                button = CustomButton(self.master, text=f"{i}",font=("Arial", 30))
-                button.pack(pady=5)
-
-root = tk.Tk()
-app = MyApp(root)
-root.mainloop()
 
