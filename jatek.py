@@ -16,11 +16,11 @@ k = -1
 vege = False
 while not vege:  
 
-cim = data["cim"]
-bevezeto = data["bevezeto"]
-ugrasss = data["kartyak"][0]["szoveg"]
-akcio = data["kartyak"][k]['akcio']
-print(akcio)
+    cim = data["cim"]
+    bevezeto = data["bevezeto"]
+    ugrasss = data["kartyak"][0]["szoveg"]
+    akcio = data["kartyak"][k]['akcio']
+    print(akcio)
 
 def DoboKocka():
     dobas = random.randint(1,6)
@@ -40,43 +40,39 @@ class Harcos:
         self.csillogo = csillogo
         self.kaja = kaja 
 
+
     def harc(self, enemy):
         while self.health > 0 and enemy.health > 0:
-            enemy.health -= self.strength
+            sebzes = 2
+            enemy.health -= sebzes
             if enemy.health <= 0:
                 print(f"{self.name} nyert a harcban.")
                 szoveg = (f'1: {"ugras"[1]}')
                 if len('ugras') > 1:
-                    szoveg = (f'1: {'ugras'[1]} 2:{ "ugras"[2]}' )
+                    szoveg = (f'1: {data["ugras"][1]} 2:{ ["ugras"][2]}' )
                 break
-            self.health -= enemy.strength
+            self.health -= enemy.sebzes
             if self.health <= 0:
                 print(f"{enemy.name} nyert játékod is véget ért")
                 szoveg = (f"{enemy.name} nyert játékod is véget ért")
                 break
 
-    def probaszerencse(self, szerencse):
-        if DoboKocka() + DoboKocka() <= self.szerencse:
-            probaszerencsee = True
-            self.szerencse -= 1
-        else:
-            probaszerencsee = False
-            self.szerencse -= 1
 
-    def ugyesseg+(self):
-        self.ugyesseg = self.ugyesseg + ugyesseg+
 
-    def ugyesseg-(self):
-        self.ugyesseg = self.ugyesseg + ugyesseg-
+    def ugyessegm(self):
+        self.ugyesseg = self.ugyesseg + ugyessegm
 
-    def eletero+(self):
-        self.eletero = self.eletero + eletero+
+    def ugyessegn(self):
+        self.ugyesseg = self.ugyesseg + ugyessegn
 
-    def eletero-(self):
-        self.eletero = self.eletero - eletero-
+    def eleterom(self):
+        self.eletero = self.eletero + eleterom
 
-    def szerencse+(self):
-        self.szerencse = self.szerencse + szerencse+
+    def eleteron(self):
+        self.eletero = self.eletero - eleteron
+
+    def szerencsem(self):
+        self.szerencse = self.szerencse + szerencsem
 
     def fix(self):
         if fix == True:
@@ -90,10 +86,19 @@ class Harcos:
 
 class Enemy:
     def __init__(self, nev, ugyesseg, eletero, sebzes = 2):
-        self.name = nev
-        self.ugyesseg = data[]
-        self.eletero =  data[]
+        self.name = data["harc"][0]
+        self.ugyesseg = data["harc"][1]
+        self.eletero =  data["harc"][3]
         self.sebzes = sebzes
+
+    def probaszerencse(self, szerencse):
+        if DoboKocka() + DoboKocka() <= self.szerencse:
+            probaszerencsee = True
+            self.szerencse -= 1
+            self.sebzes = 1
+        else:
+            probaszerencsee = False
+            self.szerencse -= 1
 
 
                                                                 #innentől karcsi dolga "DO NOT ENTER"
@@ -107,7 +112,7 @@ class CustomButton(tk.Button):
         print(int(self['text']))
         szint = int(self['text'])
 
-bevezeto= kartyak["bevezeto"]
+bevezeto= data["bevezeto"]
 szöveg  = "Szeretném közölni a játékossal, hogy ez a játék Tomó halálával végződik legtöbb esetben csak erős tűrőképességel bíróknak ajánljuk ezt a tartalmat."
 szintek = [1,5,6]
 
