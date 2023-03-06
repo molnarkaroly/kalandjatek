@@ -10,7 +10,9 @@ import json
 
 
 with open('kaland.json', 'r', encoding='utf-8') as f:
+with open('szöveg.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
+<<<<<<< Updated upstream
 szint = data["szint"]
 e = szint
 
@@ -59,18 +61,29 @@ class Harcos:
 
 
 
+<<<<<<< Updated upstream
     def ugyessegm(self):
         e = szint
         self.ugyesseg = self.ugyesseg + data[e-1][]
+=======
+    def ugyesseg1(self): 
+        self.ugyesseg = self.ugyesseg + ugyesseg1
+>>>>>>> Stashed changes
 
     def ugyessegn(self):
         self.ugyesseg = self.ugyesseg + ugyessegn
+    def ugyesseg2(self):
+        self.ugyesseg = self.ugyesseg + ugyesseg2
 
     def eleterom(self):
         self.eletero = self.eletero + eleterom
+    def eletero1(self):
+        self.eletero = self.eletero + eletero1
 
     def eleteron(self):
         self.eletero = self.eletero - eleteron
+    def eletero2(self):
+        self.eletero = self.eletero - eletero2
 
     def szerencsem(self):
         self.szerencse = self.szerencse + data[e-1]["+luck"]

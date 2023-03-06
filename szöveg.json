@@ -6,7 +6,6 @@
     "cím" : "Az ítélet labirintusa",
     "bevezető" : "Az Osztriga-öböltól délre, nagyjából nyolcvan kilométerre terül el a Koponyák Sivataga. Forró, veszedelmes és mindent egybevetve igen kellemetlen hely, ám te kénytelen vagy átkelni rajta, hisz déli felén terül el a drágakőbányáiról messze földön hires és gazdag Zafirváros. Vonz a hatalmas vagyon, mely minden harcos számára elérhető, aki hajlandó akár a köveket, akár a pénzt kíséri egyik településből a másikba. A munka azonban nem veszélytelen.Ahogy a sivatag felé közeledsz, segélykiáltásokat hallasz az utat szegélyező bozótos túloldaláról. Mikor közelebb lépsz, még épp lá tod, ahogy egy ocsmány Goblin tört márt egy igen fontosnak látszó Elf férfi szivébe, aki azonnal a földre roskad.Egyból előre rontasz, hogy elkapd a gyilkost, ám pechedre meg- botlasz, az aljas teremtmény pedig észrevesz téged, és eltűnik az alj- növényzetben.Csak állsz, és a halott Elf tetemét bámulod. Amennyire meg tudod állapítani, az egyik helyi törzs vezetője lehetett. Kezében egy nagy, kék színű gyémántot szorongat. Hirtelen megrezzennek körülötted a bokrok! Arra gondolsz, talán a Goblin tért vissza, így elöhúzod kar- dodat. Legnagyobb meglepetésedre azonban húsz vagy harminc Elf gyűrűjében találod magadat, akik megfeszített íjakkal vesznek körbe. Egyikük előre lép, és komoran megszólít.- Ember! - kezdi. Karddal a kezedben, apám, a Törzsfőnökünk meggyilkolt testével a lábad elött találtunk rád.Rájössz, hogy ezek azt hiszik, te vagy a gyilkos. Tiltakozni pró- bálnál, azonban az Elf egy intésére elhallgatsz. Az itélet Labirin- tusához viszünk fejezi be mondanivalóját. Hátat fordit neked, és elsétál, te pedig kiséröid körében kénytelen vagy követni. Miközben az örök egymás közt vitatják meg a látottakat, megtudod, hogy at labirintus egy titkos hely, ahol a bünösöket teszik próbára. Minden próba elött egy kis Aranyszobrot rejtenek el annak mélyén, a próba alanyának pedig meg kell találnia azt. Ha ez nem sikerül, bünösnek ítélik, ám ha rálel, és sikerül kijuttatnia odabentről, ártatlannak ta- lálják, és szabadon engedik.A fak ritkulni kezdenek, a menet pedig egy hatalmas fa törzsénél megtorpan. A Fönök fia motyog pár szót, mire a kéreg egy része kinyilik, mögötte pedig feltünik a labirintus bejárata... ",
     "akció" : {
-        "ugrás" : [1]
         }
     },
     {
@@ -353,7 +352,7 @@
         "szint" : 41,
         "szöveg" : "Az alagút, bár folyamatosan jobbra-balra kanyarog, nagyjából mégis tartja az északi irányt, végül élesen oldalra kanyarodik, és ekkor majdnem belefutsz egy fekete köpenybe öltözött alakba. Tőrt tart a kezében, az arcán ülő tekintet rettegésről árulkodik! Rájössz, hogy nem te vagy az egyetlen, akit most próbára tesznek, és hogy mindketten ugyanazon Szobor után kutattok. A fickó rád veti magát, nyilvánvaló, hogy mielőbb végezni akar veled. Harcolnod kell!",
         "akció" : {
-            "harc" : "Tolvaj Ügyesség-7 Életerő-6",
+            "harc" : "Tolvaj 7 6",
             "nyertél = True" : [85],
             "else" : "halál"
         }
@@ -384,8 +383,6 @@
         "szöveg" : "Ha be akarsz nyitni az ajtón, lapozz a 90-re. Ha tovább mennél keleti irányba, lapozz a 16-ra.",
         "akció" : {
             "válaszút" : {
-                "opció 1" : "Be szeretnél nyitni az ajtón [1]",
-                "opció 2" : "Inkább tovább mennél [2]",
                 "ugrás" : [90, 16]
             }
             
@@ -402,13 +399,7 @@
         "szint" : 47,
         "szöveg" : "Az ajtóhoz lépsz és kezelésbe veszed a hatalmas zárat: tekerni kezded a tárcsákat, míg a helyes kombinációt nem sikerül beállítanod rajta. Ahogy az utolsót is a megfelelő helyzetbe fordítod, az ajtó kinyílik és egy szoba tárul fel előtted, melynek falait könyvekkel megrakott polcok szegélyezik. Egy könyvtárban találod magad. A középen álló asztalon három nyitott könyvet látsz. Ha a pirosba akarsz beleolvasni, lapozz az 59-re. Hogyha a kékre vagy kíváncsi, lapozz a 104-re. Ha a zöld érdekel, lapozz a 88-ra. Ha nem tudsz olvasni és úgy döntesz, távozol az északi ajtón át, lapozz a 10-re.",
         "akció" : {
-            "válaszút" : {
-                "opció 1" : "Ha a piros érdekel [1]",
-                "opció 2" : "Ha a kék érdekel [2]",
-                "opció 3" : "Ha a zöld érdekel [3]",
-                "opció 4" : "Ha analfabéta vagy tovább mész Északra [4]",
-                "ugrás" : [59, 104, 88, 10]
-            }
+            "válaszút" : {"ugrás" : [59, 104, 88, 10]}
         }
     },
     {
@@ -431,21 +422,16 @@
         "szint" : 50,
         "szöveg" : "A tetemet átkutatva 2 Aranytallért és egy darab pergament találsz, melyre három számot írtak. Fogalmad sincs, mit jelenthetnek, de úgy gondolod, egy zár kombinációja lehet talán éppen az, amelyik a Szobrot védi. A számok rendre 15, 10 és 22. Úgy döntesz, jól megjegyzed őket, mert mindig fennáll a veszélye annak, hogy elveszted a papírdarabot. Északi irányba folytatod az utadat. Lapozz a 143-ra",
         "akció" : {
-            "+add" : "2 Aranytallér",
-            "++add" : "kombináció",
+            "arany" : 2 ,
+            "+add" : "kombináció",
             "ugrás" : [143]
         }
     },
     {
         "szint" : 51,
         "szöveg" : "Egy kis helyiségbe nyitsz be, mely első ránézésre nem tartalmaz semmi mást, csak nagy halom törmeléket a padlón. Ahogy beljebb lépsz, kellemetlen szag csapja meg az orrodat, és egy éles, magas, és amennyire meg tudod állapítani dühödt visítás kezd egyre erősödni. Végül egy rikoltás kíséretében két hatalmas Denevér ereszti el a plafont a szoba két sarkában, és feléd kezdenek repülni. Ahogy ösztönösen lebuksz sikerül észrevenned a lények vicsorgó agyarait, melyek, készek szétcincálni a torkodat Ha gyorsan kihátrálsz, majd becsapod magad mögött a bejárati ajtót, lapozz a 80-ra Hogyha megveted a lábad és megküzdesz ezekkel a szörnyű teremtményekkel, lapozz a 140-re.",
-        "akció" : {
-            "válaszút" : {
-                "opció 1" : "Vissza futsz és becsapod az ajtót [1]",
-                "opció 2" : "Itt maradsz és harcolsz [2]",
-                "ugrás" : [80, 140]
-            }
-        }
+        "akció" : {"ugrás" : [80, 140] }
+        
     },
     {
         "szint" : 52,
@@ -606,10 +592,8 @@
         "szint" : 70,
         "szöveg" : "Az ajtó egy kis szobába nyílik. Ahogy a nyílásban állsz, a fáklyák ragyogó fényében valami tiszta, vérvörös szín csillan meg Egy hatalmas rubin az, ami örök életedre gazdaggá tenne, ha ki tudnád juttatni a labirintusból. Hogyha a drágakőhöz lépnél és magadhoz vennéd, lapozz a 18-ra. Ha úgy gondold, jobb lenne, ha itt hagynád (elvégre elég nehéz), lapozz a 106-ra",
         "akció" : {
-            "válaszút" : {
-                "opció 1" :{"szöveg":"elviszed[1]","+add":"dragako"},
-                "opció 2" : "otthagyod[2]",
-                "ugrás" : [18,106]
+            "add":"dragako",
+            "ugrás" : [18,106]
             }
         }
     },
@@ -680,6 +664,7 @@
         "szöveg" : "A számszeríj nem volt tökéletesen beállítva, így ahelyett, hogy halálos sebet okozott volna fejeden vagy nyakadon, a vesző csupán hal válladba áll bele elég mélyen. Lehetett volna rosszabb is, de még így is vesztesz 4 ÉLETERŐ pontot. Kirántod a lövedéket, szakítasz ruhádról némi gézt és szorosan bekötöd magad, hogy el ne vérezz. Hangosan átkozódva indulsz ismét észak felé, az egyetlen irányba, amerre még teheted. Lapozz a 89-re.",
         "akció" : {
             "-HP":
+            "-HP": 1,
             "ugrás" : [41]
         }
     },
