@@ -53,7 +53,7 @@ Tomó= Harcos("Tomó")
 
 def ugyessegm(self):
         e = szint
-        self.ugyesseg = self.ugyesseg + data[e-1][]
+        self.ugyesseg = self.ugyesseg 
 
 def ugyesseg1(self): 
         self.ugyesseg = self.ugyesseg + ugyesseg1
@@ -180,7 +180,7 @@ while not vege:
         print("https://media.giphy.com/media/ZcUGu59vhBGgbBhh0n/giphy.gif")
 
     if data[e-1]["tipus"]=="tválasztás":
-        if vane(data[e-1]["kartyak"]["akcio"]["tárgyválasztaás"],inventory)== False:
+        if vane(data[e-1]["cards"]["akcio"]["tárgyválasztaás"],inventory)== False:
             tszint = data[e-1]["Cards"]["akcio"]["ugrás"][0]
             
         else:
