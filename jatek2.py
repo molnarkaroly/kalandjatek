@@ -1,8 +1,8 @@
 import json
 
-with open('szöveg.json', 'r', encoding="utf-8") as f:
+with open('nemtudom.json', 'r', encoding="utf-8") as f:
     data = json.load(f)
 
-card = data['Cards'][0]
+card = data["Cards"][2-1]["akció"]["ugrás"]
 print(card)
 

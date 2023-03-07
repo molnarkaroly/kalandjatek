@@ -7,7 +7,14 @@ from tkinter.ttk import *
 import tkinter as tk
 import json
 
-
+while True:
+     if keyboard.is_pressed('Escape'):
+          vege= True
+          print("----------------------------------------------------------------")
+          break
+     if keyboard.is_pressed('Escape') and not keyboard.is_pressed('shift'):
+          break
+          
 
 with open('nemtudom.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
@@ -106,9 +113,9 @@ def vane(ebben,ez):
         else:
             return False
         
-def halál(self):
-    szöveg = " Játékod itt véget ért meghaltál XDDDDDDDDDDDD (sz@r lehet)"
-    vege= True
+def halál(vege):
+   print(" Játékod itt véget ért meghaltál XDDDDDDDDDDDD ")
+   return  True
 
 def harc(self, enemy):
         while self.health > 0 and enemy.health > 0:
@@ -135,17 +142,28 @@ def probaszerencse(Tomó, szerencse):
     else:
         Tomó.szerencse -= 1
         return False    
+    
+e= 2
 
-while not vege:  
-    e= 2
-    print(data["Cards"][e-1]["szint"])
-    print (data["Cards"][e-1]["szöveg"])
+print(data["Cards"][e-1]["szint"])
+print (data["Cards"][e-1]["szöveg"])
+szint = int(input("Szint: ")) 
+if szint != data["Cards"][e-1]["akció"]["ugrás"][0]:
+    halál(vege)
+else:
+    
 
-    if data["Cards"][e-1]["akció"] ==["halál"]:
-        halál()
-        continue
 
-    if data["Cards"][e-1]["akció"]["tipus"] ==["ugrás"]:
+ while not vege:  
+    
+    e= szint
+   
+
+    if data["Cards"][e-1]["akció"]["tipus"] =="halál":
+        halál(vege)
+        break
+
+    if data["Cards"][e-1]["akció"]["tipus"] =="ugrás":
         ugrasss= data["Cards"][e-1]["akcio"]["ugrás"]
         print(f'merre mész tovább {len(ugrasss)}')
         tszint= int (input("Melyikre mész tovább?")) #tszint talán szint azt ellenőrzi hogy van e olyan szint a listában
@@ -155,7 +173,7 @@ while not vege:
             print("nincs ilyen szint")
             continue
 
-    if data["Cards"][e-1]["akció"]["tipus"] ==["harc"]:
+    if data["Cards"][e-1]["akció"]["tipus"] =="harc":
         harc(Tomó, data["Cards"][e-1]["akció"]["harc"])
         continue
 
@@ -169,17 +187,17 @@ while not vege:
     #        print("nincs ilyen szint")
     #        continue
 
-    if data["Cards"][e-1]["tipus"]=="luckválasztás":
+    if data["Cards"][e-1]["akció"]["tipus"]=="luckválasztás":
         if probaszerencse() == True:
             szint= data["Cards"][e-1]["akcio"]["ugrás"][0]
         else:
             szint= data["Cards"][e-1]["akcio"]["ugrás"][1]
     
-    if data["Cards"][e-1]["tipus"]=="győzelem":
+    if data["Cards"][e-1]["akció"]["tipus"]=="győzelem":
         print("Győztél!!! nyisd meg ezt a linket")
         print("https://media.giphy.com/media/ZcUGu59vhBGgbBhh0n/giphy.gif")
 
-    if data["Cards"][e-1]["tipus"]=="tválasztás":
+    if data["Cards"][e-1]["akció"]["tipus"]=="tválasztás":
         if vane(data["Cards"][e-1]["akcio"]["tárgyválasztaás"],inventory)== False:
             tszint = data["Cards"][e-1]["akcio"]["ugrás"][0]
             
