@@ -73,16 +73,16 @@ def eletero1(self):
         self.eletero = self.eletero + eletero1
 
 def eleteron(self):
-        self.eletero = self.eletero - eleteron
+        self.eletero = self.eletero - data["Cards"][e-1]["akció"]["minushp"]
+
 def eletero2(self):
-        self.eletero = self.eletero - eletero2
+        self.eletero = self.eletero +  data["Cards"][e-1]["akció"]["plushp"]
 
 def szerencsem(self):
-        self.szerencse = self.szerencse + data[e-1]["+luck"]
+        self.szerencse = self.szerencse - data["Cards"][e-1]["akció"]["minusluck"]
 
-def szerencsem(self):
-        e = szint
-        self.szerencse = self.szerencse - data[e-1]["-luck"]
+def sebzesplus(sebzes):
+    return 3
 
 def fix(self):
         if fix == True:
@@ -95,9 +95,9 @@ def fix(self):
 
 class Enemy:
     def __init__(self, nev, ugyesseg, eletero, sebzes = 2):
-        self.name = data["harc"][0]
-        self.ugyesseg = data["harc"][1]
-        self.eletero =  data["harc"][3]
+        self.name = data["Cards"][e-1]["akció"]["ellenfél"][0]
+        self.ugyesseg = data["Cards"][e-1]["akció"]["ellenfél"][1]
+        self.eletero =  data["Cards"][e-1]["akció"]["ellenfél"][2]
         self.sebzes = sebzes
 
 
@@ -110,7 +110,7 @@ def vane(ebben,ez):
             return False
         
 def halál(vege):
-   print(" Játékod itt véget ért meghaltál XDDDDDDDDDDDD ")
+   print(" Játékod itt véget ért meghaltál XDDDDDDDDDDDD (bibis lett az ujjad és meghaltál) ")
    return  True
 
 def harc(self, enemy):
@@ -134,7 +134,6 @@ def probaszerencse(Tomó, szerencse):
         Tomó.szerencse -= 1
         Tomó.sebzes = 1
         return True
-
     else:
         Tomó.szerencse -= 1
         return False    
@@ -154,12 +153,8 @@ else:
     if keyboard.is_pressed("Escape"):
        vege= True
 
-    if data["Cards"]["akció"]["tipus"] == "ugrás":
-        ugras_celpont = data["Cards"]["akció"]["ugrás"][0]
-        kovetkezo_kartya = data["Cards"][int(ugras_celpont)]["szöveg"]
-        print(kovetkezo_kartya['szöveg'])
 
-    e= szint
+    e = szint
    
 
     if data["Cards"][e-1]["akció"]["tipus"] =="halál":
@@ -167,8 +162,24 @@ else:
         break
 
     if data["Cards"][e-1]["akció"]["tipus"] =="ugrás":
-        ugrasss= data["Cards"][e-1]["akcio"]["ugrás"]
-        print(f'merre mész tovább {len(ugrasss)}')
+        ugrasss= data["Cards"][e-1]["akció"]["ugrás"]
+        print(f'merre mész tovább {ugrasss}')
+        print(data["Cards"][e-1]["szöveg"])
+        print(f'amerre tovább mehetsz: {ugrasss}')
+        tszint= int (input("Melyikre mész tovább?")) #tszint talán szint azt ellenőrzi hogy van e olyan szint a listában
+        if vane(ugrasss,tszint)== True:
+            szint = tszint
+        else:
+            print("nincs ilyen szint")
+            halál(vege)
+
+    if data["Cards"][e-1]["akció"]["tipus"] =="harc":
+        harc(Tomó, data["Cards"][e-1]["akció"]["harc"])
+        continue
+
+    if data[e-1]["akció"]["választás"]:
+        ugrasss= data[e-1]["akció"]["ugrás"]
+        print(f'merre mész tovább {ugrasss}')
         tszint= int (input("Melyikre mész tovább?")) #tszint talán szint azt ellenőrzi hogy van e olyan szint a listában
         if vane(tszint,ugrasss)== True:
             szint = tszint
@@ -176,37 +187,25 @@ else:
             print("nincs ilyen szint")
             continue
 
-    if data["Cards"][e-1]["akció"]["tipus"] =="harc":
-        harc(Tomó, data["Cards"][e-1]["akció"]["harc"])
-        continue
-
-    #if data[e-1]["akció"]["választás"]:
-    #    ugrasss= data[e-1]["akcio"]["ugrás"]
-    #    print(f'merre mész tovább {len(ugrasss)}')
-    #    tszint= int (input("Melyikre mész tovább?")) #tszint talán szint azt ellenőrzi hogy van e olyan szint a listában
-    #    if vane(tszint,ugrasss)== True:
-    #        szint = tszint
-    #    else:
-    #        print("nincs ilyen szint")
-    #        continue
-
     if data["Cards"][e-1]["akció"]["tipus"]=="luckválasztás":
         if probaszerencse() == True:
-            szint= data["Cards"][e-1]["akcio"]["ugrás"][0]
+            szint= data["Cards"][e-1]["akció"]["ugrás"][0]
         else:
-            szint= data["Cards"][e-1]["akcio"]["ugrás"][1]
+            szint= data["Cards"][e-1]["akció"]["ugrás"][1]
     
     if data["Cards"][e-1]["akció"]["tipus"]=="győzelem":
         print("Győztél!!! nyisd meg ezt a linket")
         print("https://media.giphy.com/media/ZcUGu59vhBGgbBhh0n/giphy.gif")
 
     if data["Cards"][e-1]["akció"]["tipus"]=="tválasztás":
-        if vane(data["Cards"][e-1]["akcio"]["tárgyválasztaás"],inventory)== False:
-            tszint = data["Cards"][e-1]["akcio"]["ugrás"][0]
+        if vane(data["Cards"][e-1]["akció"]["tárgyválasztaás"],inventory)== False:
+            tszint = data["Cards"][e-1]["akció"]["ugrás"][0]
+
             
         else:
-            tszint = data["Cards"][e-1]["akcio"]["ugrás"][1]
+            tszint = data["Cards"][e-1]["akció"]["ugrás"][1]
             continue
+
 
 
 
