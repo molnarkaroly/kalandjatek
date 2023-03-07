@@ -52,7 +52,7 @@ class Harcos:
 Tomó= Harcos("Tomó")
 
 
-
+"""
 def ugyessegm(self):
         e = szint
         self.ugyesseg = self.ugyesseg 
@@ -70,6 +70,7 @@ def eleterom(self):
         self.eletero = self.eletero + eleterom
 def eletero1(self):
         self.eletero = self.eletero + eletero1
+"""
 
 def minushp(self):
         self.eletero = self.eletero - data["Cards"][e-1]["akció"]["minushp"]
@@ -214,6 +215,15 @@ else:
 
     if data["Cards"][e-1]["akció"] == "minusluck":
          minusluck()
+    
+    if data["Cards"][e-1]["akció"] == "harc2":
+        sebzesplus()
+        harc(Tomó, data["Cards"][e-1]["akció"]["ellenfél"][0])
+        harc(Tomó, data["Cards"][e-1]["akció"]["ellenfél"][1])
+                                     
+    if data["Cards"][e-1]["akció"] == "harc3":
+        harc(Tomó,data["Cards"][e-1]["akció"]["ellenfél"][0])
+        harc(Tomó,data["Cards"][e-1]["akció"]["ellenfél"][1])
 
 
 
