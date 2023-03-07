@@ -26,14 +26,14 @@
         "szint" : 3,
         "szöveg" : "Ahogy óvatosan a drótok között lépkedve eléred a Szobrot, az hirtelen eltünk! A következő pillanatban vészjósló morajlás hangzik fel a fejed fölött, és ahogy arra nézel, látod, hogy hatalmas szikladarabok kezdenek feléd zuhanni. A hatalmas súly porrá örli csontjaidat. Kalandod itt véget ér.",
         "akció" : {
-            "tipus": "halál",
+            "tipus": "halál"
         }
     },
     {
         "szint" : 4,
         "szöveg" : "A kötél igen rossz állapotban van, és még félúton sem jársz, mikor elszakad... Kalandod itt véget ér.",
         "akció" : {
-            "tipus": "halál",
+            "tipus": "halál"
         }
     },
     {
