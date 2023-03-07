@@ -1,5 +1,4 @@
-{
-"Cards": [
+{"Cards": [
     {
     "cím" : "Az ítélet labirintusa",
     "bevezető" : "Az Osztriga-öböltól délre, nagyjából nyolcvan kilométerre terül el a Koponyák Sivataga. Forró, veszedelmes és mindent egybevetve igen kellemetlen hely, ám te kénytelen vagy átkelni rajta, hisz déli felén terül el a drágakőbányáiról messze földön hires és gazdag Zafirváros. Vonz a hatalmas vagyon, mely minden harcos számára elérhető, aki hajlandó akár a köveket, akár a pénzt kíséri egyik településből a másikba. A munka azonban nem veszélytelen.Ahogy a sivatag felé közeledsz, segélykiáltásokat hallasz az utat szegélyező bozótos túloldaláról. Mikor közelebb lépsz, még épp lá tod, ahogy egy ocsmány Goblin tört márt egy igen fontosnak látszó Elf férfi szivébe, aki azonnal a földre roskad.Egyból előre rontasz, hogy elkapd a gyilkost, ám pechedre meg- botlasz, az aljas teremtmény pedig észrevesz téged, és eltűnik az alj- növényzetben.Csak állsz, és a halott Elf tetemét bámulod. Amennyire meg tudod állapítani, az egyik helyi törzs vezetője lehetett. Kezében egy nagy, kék színű gyémántot szorongat. Hirtelen megrezzennek körülötted a bokrok! Arra gondolsz, talán a Goblin tért vissza, így elöhúzod kar- dodat. Legnagyobb meglepetésedre azonban húsz vagy harminc Elf gyűrűjében találod magadat, akik megfeszített íjakkal vesznek körbe. Egyikük előre lép, és komoran megszólít.- Ember! - kezdi. Karddal a kezedben, apám, a Törzsfőnökünk meggyilkolt testével a lábad elött találtunk rád.Rájössz, hogy ezek azt hiszik, te vagy a gyilkos. Tiltakozni pró- bálnál, azonban az Elf egy intésére elhallgatsz. Az itélet Labirin- tusához viszünk fejezi be mondanivalóját. Hátat fordit neked, és elsétál, te pedig kiséröid körében kénytelen vagy követni. Miközben az örök egymás közt vitatják meg a látottakat, megtudod, hogy at labirintus egy titkos hely, ahol a bünösöket teszik próbára. Minden próba elött egy kis Aranyszobrot rejtenek el annak mélyén, a próba alanyának pedig meg kell találnia azt. Ha ez nem sikerül, bünösnek ítélik, ám ha rálel, és sikerül kijuttatnia odabentről, ártatlannak ta- lálják, és szabadon engedik.A fak ritkulni kezdenek, a menet pedig egy hatalmas fa törzsénél megtorpan. A Fönök fia motyog pár szót, mire a kéreg egy része kinyilik, mögötte pedig feltünik a labirintus bejárata... ",
@@ -1500,7 +1499,7 @@
         "szöveg" : "Az egyik keringö cölöp váratlanul elfordul, és könnyedén felhasítja a bőrödet. Tedd próbára SZERENCSED! Ha szerencsés vagy. lapozz a 194-re. Ha nem, lapozz a 170-re.",
         "akció" : {
             "tipus": "luckválasztás",
-            "ugrás" : [41]
+            "ugrás" : [194,170]
         }
     },
     {
@@ -1513,9 +1512,9 @@
     },
     {
         "szint" : 185,
-        "szöveg" : "Leugrasz a verembe, miután meggyözödtól róla, hogy ki fogsz tudni belőle mászni, ha ez szükségesnek bizonyulna. Mikor körbe- nézel, egy alacsony bejáratra bukkansz az egyik kinyúló szikladarab alatt. Szinte négy- kézlábra kell leereszkedned, hogy be tudj kukkantani rajta. Ha alaposabban is szét akarsz odabenn nézni, úgy lapozz a 178-ra. Ha inkább visszatérnél a szobába, lapozz a 172-re és válassz valami mást.",
+        "szöveg" : "Leugrasz a verembe, miután meggyözödtól róla, hogy ki fogsz tudni belőle mászni, ha ez szükségesnek bizonyulna. Mikor körbe- nézel, egy alacsony bejáratra bukkansz az egyik kinyúló szikladarab alatt. Szinte négykézlábra kell leereszkedned, hogy be tudj kukkantani rajta. Ha alaposabban is szét akarsz odabenn nézni, úgy lapozz a 178-ra. Ha inkább visszatérnél a szobába, lapozz a 172-re és válassz valami mást.",
         "akció" : {
-            "tipus": "ugrás",
+            "tipus": "választás",
             "ugrás" : [178,172]
         }
     },
@@ -1549,24 +1548,25 @@
         "szint" : 189,
         "szöveg" : "Ahogy óvatosan áthaladsz a padlón, arra várva, hogy a cövekek mozgás közben utat engedjenek neked, az egyik hegye belekap kabátodba és kibillent az egyensúlyodból. Tedd próbára SZERENCSÉD! Ha szerencséd van, lapozz a 162-re. Ha nincs szerencséd, lapozz a 183-ra.",
         "akció" : {
-            "tipus": "ugrás",
-            "ugrás" : [41]
+            "tipus": "luckválasztás",
+            "ugrás" : [162,183]
         }
     },
     {
         "szint" : 190,
-        "szöveg" : "Már majdnem eléred a sziklaszirt alját, amikor a kötél elfogy. Innen le kell ugra- nod. Nagyjából két méterre van alattad a talaj, de elég sziklás. Tedd próbára SZEREN- CSED! Ha szerencsés vagy, biztonságban, sebesülés nélkül landolsz a talajon - lapozz a 27-re. Hogyha nincs szerencséd, lapozz az 54-re.",
+        "szöveg" : "Már majdnem eléred a sziklaszirt alját, amikor a kötél elfogy. Innen le kell ugra- nod. Nagyjából két méterre van alattad a talaj, de elég sziklás. Tedd próbára SZERENCSED! Ha szerencsés vagy, biztonságban, sebesülés nélkül landolsz a talajon - lapozz a 27-re. Hogyha nincs szerencséd, lapozz az 54-re.",
         "akció" : {
-            "tipus": "ugrás",
-            "ugrás" : [41]
+            "tipus": "luckválasztás",
+            "ugrás" : [27,54]
         }
     },
     {
         "szint" : 191,
-        "szöveg" : "A három teremtmény testét álkutatva fe- jenként 1 Aranytallért találsz. Ezután a kristályhoz lépsz, a belőle áradó, gyönyö- rüen lüktető fény azonban már halványodní kezdett, és mire felemeled, már csak egy nagy, értéktelen üvegtömböt tartasz a ke- zedben. Káromkodva vágod a földhöz, ahol darabokra törik. A barlangban ezen kívül csupán egyetlen érdekes dolgol találsz: egy nagyjából egy méter átmérőjű lyukat a fal- ban, több méter magasan. Elé húzod az emelvényt, melyen korábban a kristály állt, ráállsz és betekintesz rajta. Sima csúszdát pillantasz meg, mely enyhén lefelé lejt. Ha ezen a lyuk át akarod folytatni az utad, la- pozz a 123-ra. Ha az északi",
+        "szöveg" : "A három teremtmény testét átkutatva fejenként 1 Aranytallért találsz. Ezután a kristályhoz lépsz, a belőle áradó, gyönyö- rüen lüktető fény azonban már halványodní kezdett, és mire felemeled, már csak egy nagy, értéktelen üvegtömböt tartasz a kezedben. Káromkodva vágod a földhöz, ahol darabokra törik. A barlangban ezen kívül csupán egyetlen érdekes dolgol találsz: egy nagyjából egy méter átmérőjű lyukat a falban, több méter magasan. Elé húzod az emelvényt, melyen korábban a kristály állt, ráállsz és betekintesz rajta. Sima csúszdát pillantasz meg, mely enyhén lefelé lejt. Ha ezen a lyuk át akarod folytatni az utad, lapozz a 123-ra. Ha az északi lapozz 33-ra",
         "akció" : {
-            "tipus": "ugrás",
-            "ugrás" : [41]
+            "tipus": "választás",
+            "arany":1,
+            "ugrás" : [123,33]
         }
     },
     {
@@ -1574,15 +1574,15 @@
         "szöveg" : "Sikerül gond nélkül elérned a túloldalt, majd sietve távozol az északi nyíláson át. Lapozz az 52-re.",
         "akció" : {
             "tipus": "ugrás",
-            "ugrás" : [41]
+            "ugrás" : [52]
         }
     },
     {
         "szint" : 193,
         "szöveg" : "Ahogy megkerülöd a medencét, látod, ahogy mocorogni kezd a felszín. Apró, zöld fények nönek ki a sár felszínéből. Tedd próbára SZERENCSÉD! Ha szerencsés vagy, lapozz a 25-re. Ha nem, lapozz a 101-re.",
         "akció" : {
-            "tipus": "ugrás",
-            "ugrás" : [41]
+            "tipus": "luckválasztás",
+            "ugrás" : [25,101]
         }
     },
     {
@@ -1590,64 +1590,65 @@
         "szöveg" : "Szerencséd van, a cövek okozta seb arány- lag kicsi. Vesztesz 2 ÉLETERÓ pontot. Eléred a rubint. Lapozz a 46-ra.",
         "akció" : {
             "tipus": "ugrás",
-            "ugrás" : [41]
+            "minushp":2,
+            "ugrás" : [46]
         }
     },
     {
         "szint" : 195,
-        "szöveg" : "A járatot egy hatalmas tölgyfa ajtó zárja el, melyen gyönyörűen megmunkált csukló- pántok és egy hatalmas, sodort fémkilincs van. Két oldalán fáklyák égnek, melyek táncoló fénybe borítják az alagút ezen ré- szét. Egy pergamenlapot látsz az ajtóra szögezve, amin több nyelven is egy szöveg olvasható. Gyorsan keresel egy olyat, amit te is megértesz. A szöveg a következő:Ha idáig eljutottál igen bátor lehetsz. Bátorságod most vagy életet hoz rád, vagy halált. Kopogi és lépj be.Bekopogsz az ajtón, és elfordítod a kilin- esel. Lapozz a 39-re.",
+        "szöveg" : "A járatot egy hatalmas tölgyfa ajtó zárja el, melyen gyönyörűen megmunkált csukló- pántok és egy hatalmas, sodort fémkilincs van. Két oldalán fáklyák égnek, melyek táncoló fénybe borítják az alagút ezen ré- szét. Egy pergamenlapot látsz az ajtóra szögezve, amin több nyelven is egy szöveg olvasható. Gyorsan keresel egy olyat, amit te is megértesz. A szöveg a következő:Ha idáig eljutottál igen bátor lehetsz. Bátorságod most vagy életet hoz rád, vagy halált. Kopogi és lépj be.Bekopogsz az ajtón, és elfordítod a kilincsel. Lapozz a 39-re.",
         "akció" : {
             "tipus": "ugrás",
-            "ugrás" : [41]
+            "ugrás" : [39]
         }
     },
     {
         "szint" : 196,
-        "szöveg" : "Amennyire csak tudod, puha ruhadarabok- kal béleled ki a vállad, behúzod a nyakad és az ajtónak rontasz. Dobj egy kockával. Ha az eredmény 1-4, megsérültél és vesztesz 2 ÉLETERO pontot. Ha azonban 5-öt vagy 6-01 dobtál, sikerült betörnöd az ajtót - lapozz a 158-ra. Egészen addig kell próbálkoznod, míg ez nem sikerül.",
+        "szöveg" : "Amennyire csak tudod, puha ruhadarabok- kal béleled ki a vállad, behúzod a nyakad és az ajtónak rontasz. Dobj egy kockával. Ha az eredmény 1-4, megsérültél és vesztesz 2 ÉLETERO pontot. Ha azonban 5-öt vagy 6-01 dobtál, sikerült betörnöd az ajtót lapozz a 158-ra. Egészen addig kell próbálkoznod, míg ez nem sikerül.",
         "akció" : {
-            "tipus": "ugrás",
-            "ugrás" : [41]
+            "tipus": "betörés",
+            "ugrás" : [158]
         }
     },
     {
         "szint" : 197,
         "szöveg" : "A folyadékot elfogyasztva nem érzel semmi különlegeset. Tudtodon kívül azonban el- fogyasztottad a Szerencse Elixírjét. Mostan- tól kezdve valahányszor próbára teszed a SZERENCSÉDET, a dobás értékét megnövel- heted 1-el. Hogyha még nem tetted, és most belekóstolnál az első üvegbe, lapozz a 139-re. Ha a másodikat akarod meginni, lapozz a 150-re. Ha folytatnád az utadat keleti irányba, lapozz a 29-re.",
         "akció" : {
-            "tipus": "ugrás",
-            "ugrás" : [41]
+            "tipus": "választás",
+            "áldás":"luck",
+            "ugrás" : [139,150,29]
         }
     },
     {
         "szint" : 198,
-        "szöveg" : "A két lénynél összesen 5 Aranytallért ta- lálsz, meg egy érdekes növénykét. Ha elég éhes vagy ahhoz, hogy megedd, vagy úgy sojted, valamilyen mágikus tulajdonsággal rendelkezik, lapozz a 49-re. Ha inkább hagyod, ahol van és az északi ajtón át lá- vozol, lapozz a 152-re.",
+        "szöveg" : "A két lénynél összesen 5 Aranytallért ta- lálsz, meg egy érdekes növénykét. Ha elég éhes vagy ahhoz, hogy megedd, vagy úgy sojted, valamilyen mágikus tulajdonsággal rendelkezik, lapozz a 49-re. Ha inkább hagyod, ahol van és az északi ajtón át távozol, lapozz a 152-re.",
         "akció" : {
             "tipus": "ugrás",
-            "ugrás" : [41]
+            "arany":5,
+            "ugrás" : [152]
         }
     },
     {
         "szint" : 199,
         "szöveg" : "A csapóajtó eléggé megszorult, végül azon- ban sikerül kinyitnod. Alatta egy kis üreget találsz, abban pedig három tárgyat: egy gyürüt, egy kis fiolányi folyadékot és egy összehajtogatott köpenyt. Ha fel akarod pró- bálni a gyűrűt, lapozz a 119-re. Hogyha fel szeretnéd venni a köpenyt, lapozz a 12-re. Amennyiben felhajtanád a folyadékot, la- pozz a 71-re. Ha mindezeket a hasznos tár- gyakat a következő utazónak hagynád hátra, bezárnád a csapóajtót és az ajtón kilépve észak felé távoznál, lapozz a 80-ra.",
         "akció" : {
-            "tipus": "ugrás",
-            "ugrás" : [41]
+            "tipus": "választás",
+            "ugrás" : [12,71,80]
         }
     },
     {
         "szint" : 199,
-        "szöveg" : "Amennyire csak tudod, puha ruhadarabok- kal béleled ki a vállad, behúzod a nyakad és az ajtónak rontasz. Dobj egy kockával. Ha az eredmény 1-4, megsérültél és vesztesz 2 ÉLETERO pontot. Ha azonban 5-öt vagy 6-01 dobtál, sikerült betörnöd az ajtót - lapozz a 158-ra. Egészen addig kell próbálkoznod, míg ez nem sikerül.",
+        "szöveg" : "A csapóajtó eléggé megszorult, végül azon- ban sikerül kinyitnod. Alatta egy kis üreget találsz, abban pedig három tárgyat: egy gyürüt, egy kis fiolányi folyadékot és egy összehajtogatott köpenyt. Ha fel akarod pró- bálni a gyűrűt, lapozz a 119-re. Hogyha fel szeretnéd venni a köpenyt, lapozz a 12-re. Amennyiben felhajtanád a folyadékot, la- pozz a 71-re. Ha mindezeket a hasznos tár- gyakat a következő utazónak hagynád hátra, bezárnád a csapóajtót és az ajtón kilépve észak felé távoznál, lapozz a 80-ra.",
         "akció" : {
-            "tipus": "ugrás",
-            "ugrás" : [41]
+            "tipus": "választás",
+            "ugrás" : [119,12,80]
         }
     },
     {
         "szint" : 200,
         "szöveg" : "Az odafonn álló Elfek serege várakozóan néz rád, (jaikat megfeszítve tartják maguk előtt, egyenesen rád célozva. A Főnök fia előre lép és kérdően az öregre tekint, aki alig észrevehetően bólint. Az ifjú kifejezés- telen arccal feléd fordul. Ember, ártat- lannak ítéltettél, így szabadon távozhatsz. Megtarthatsz bármit, amit az ítélet Labirin- tusában találtál. Távozz. - Kábán lépsz le az emelvényről. Az Elfek utat nyitnak neked, miközben elhaladsz mellettük. Mikor végre nyílt terepre érsz, megfordulsz és leg- nagyobb meglepetésedre már csak az öreget látod. Búcsúzóul feléd biccent, a következő pillanatban pedig a szemed előtt oszlik szét ragyogó fénnyé. Vállat vonsz és folytatod a hosszú sétautat Zafirvárosba.",
         "akció" : {
-            "tipus": "ugrás",
-            "ugrás" : [41]
+            "tipus": "gyöz"
         }
-    }
-]
+    }]
 }
