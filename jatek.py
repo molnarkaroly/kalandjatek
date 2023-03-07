@@ -7,16 +7,12 @@ from tkinter.ttk import *
 import tkinter as tk
 import json
 
-while True:
-     if keyboard.is_pressed('Escape'):
-          vege= True
-          print("----------------------------------------------------------------")
-          break
-     if keyboard.is_pressed('Escape') and not keyboard.is_pressed('shift'):
-          break
+
+
+
           
 
-with open('nemtudom.json', 'r', encoding='utf-8') as f:
+with open('szöveg.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 
@@ -148,14 +144,21 @@ e= 2
 print(data["Cards"][e-1]["szint"])
 print (data["Cards"][e-1]["szöveg"])
 szint = int(input("Szint: ")) 
-if szint != data["Cards"][e-1]["akció"]["ugrás"][0]:
+if szint != data["Cards"][e-1]["akció"]["ugrás"]:
     halál(vege)
 else:
     
-
+ szint = e
 
  while not vege:  
-    
+    if keyboard.is_pressed("Escape"):
+       vege= True
+
+    if data["Cards"]["akció"]["tipus"] == "ugrás":
+        ugras_celpont = data["Cards"]["akció"]["ugrás"][0]
+        kovetkezo_kartya = data["Cards"][int(ugras_celpont)]["szöveg"]
+        print(kovetkezo_kartya['szöveg'])
+
     e= szint
    
 
