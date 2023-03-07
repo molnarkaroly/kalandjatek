@@ -1,5 +1,4 @@
 import random
-import keyboard
 import json
 import tkinter as tk
 from tkinter import *
@@ -72,13 +71,13 @@ def eleterom(self):
 def eletero1(self):
         self.eletero = self.eletero + eletero1
 
-def eleteron(self):
+def minushp(self):
         self.eletero = self.eletero - data["Cards"][e-1]["akció"]["minushp"]
 
-def eletero2(self):
+def plushp(self):
         self.eletero = self.eletero +  data["Cards"][e-1]["akció"]["plushp"]
 
-def szerencsem(self):
+def minusluck(self):
         self.szerencse = self.szerencse - data["Cards"][e-1]["akció"]["minusluck"]
 
 def sebzesplus(sebzes):
@@ -150,8 +149,6 @@ else:
  szint = e
 
  while not vege:  
-    if keyboard.is_pressed("Escape"):
-       vege= True
 
 
     e = szint
@@ -174,12 +171,14 @@ else:
             halál(vege)
 
     if data["Cards"][e-1]["akció"]["tipus"] =="harc":
+        print (data["Cards"][e-1]["szöveg"])
         harc(Tomó, data["Cards"][e-1]["akció"]["harc"])
         continue
 
     if data[e-1]["akció"]["választás"]:
         ugrasss= data[e-1]["akció"]["ugrás"]
         print(f'merre mész tovább {ugrasss}')
+        print (data["Cards"][e-1]["szöveg"])
         tszint= int (input("Melyikre mész tovább?")) #tszint talán szint azt ellenőrzi hogy van e olyan szint a listában
         if vane(tszint,ugrasss)== True:
             szint = tszint
@@ -188,6 +187,7 @@ else:
             continue
 
     if data["Cards"][e-1]["akció"]["tipus"]=="luckválasztás":
+        print (data["Cards"][e-1]["szöveg"])
         if probaszerencse() == True:
             szint= data["Cards"][e-1]["akció"]["ugrás"][0]
         else:
@@ -198,13 +198,22 @@ else:
         print("https://media.giphy.com/media/ZcUGu59vhBGgbBhh0n/giphy.gif")
 
     if data["Cards"][e-1]["akció"]["tipus"]=="tválasztás":
+        print (data["Cards"][e-1]["szöveg"])
         if vane(data["Cards"][e-1]["akció"]["tárgyválasztaás"],inventory)== False:
             tszint = data["Cards"][e-1]["akció"]["ugrás"][0]
 
-            
         else:
             tszint = data["Cards"][e-1]["akció"]["ugrás"][1]
             continue
+
+    if data["Cards"][e-1]["akció"]=="minushp":
+        minushp()
+
+    if data["Cards"][e-1]["akció"]== "plushp":
+         plushp()
+
+    if data["Cards"][e-1]["akció"] == "minusluck":
+         minusluck()
 
 
 
