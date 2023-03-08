@@ -10,7 +10,7 @@
         "szöveg" : "Belöknek a lenti alagútba, és rád zárják az ajtót, kizárva ezzel a nyíláson át beszűrődő természetes világosságot. Innentől kezdve kizárólag a falra rögzített fäklyáktól remél- hetsz valamennyi fényt. Ahogy szemed hozzászokik a homályhoz, látod, hogy az alagút észak felé indul. Nagyot sóhajtasz a dolog igazságtalansága felett, majd elindulsz abba az irányba. Lapozz a 41-re.",
         "akció" : {
             "tipus": "ugrás",
-            "ugrás" : 41
+            "ugrás" : [41]
         }
     },
     {

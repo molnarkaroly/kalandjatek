@@ -15,8 +15,6 @@ with open('szöveg.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 
-e = 1
-
 vege = False
 
 #cim = data["Cards"]["cim"]
