@@ -399,7 +399,7 @@
         "szöveg" : "A növénykének valóban mágikus gyógyító tulajdonsága van, és még szerencsét is hoz. Nyersz 4 ÉLETERŐ pontot, SZERENCSE pontjaid pedig mostantól kezdve nem fognak 6 alá menni. Az északi ajtón át távozol. Lapozz a 152-re.",
         "akció" : {
             "tipus": "ugrás",
-            "elet+" : 4,
+            "plushp" : 4,
             "fix" : "A szerencséd mostantól nem mehet 6 alá",
             "ugrás" : [152]
         }
