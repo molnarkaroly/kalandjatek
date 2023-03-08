@@ -1641,7 +1641,7 @@
         "szint" : 200,
         "szöveg" : "Az odafonn álló Elfek serege várakozóan néz rád, (jaikat megfeszítve tartják maguk előtt, egyenesen rád célozva. A Főnök fia előre lép és kérdően az öregre tekint, aki alig észrevehetően bólint. Az ifjú kifejezés- telen arccal feléd fordul. Ember, ártat- lannak ítéltettél, így szabadon távozhatsz. Megtarthatsz bármit, amit az ítélet Labirin- tusában találtál. Távozz. - Kábán lépsz le az emelvényről. Az Elfek utat nyitnak neked, miközben elhaladsz mellettük. Mikor végre nyílt terepre érsz, megfordulsz és leg- nagyobb meglepetésedre már csak az öreget látod. Búcsúzóul feléd biccent, a következő pillanatban pedig a szemed előtt oszlik szét ragyogó fénnyé. Vállat vonsz és folytatod a hosszú sétautat Zafirvárosba.",
         "akció" : {
-            "tipus": "gyöz"
+            "tipus": "győzelem"
         }
     }]
 }
