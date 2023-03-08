@@ -111,12 +111,12 @@ def probaszerencse(Tomó, szerencse):
         Tomó.szerencse -= 1
         return False    
     
-e= 2
+e= 1
 
-print(data["Cards"][e-1]["szint"])
-print (data["Cards"][e-1]["szöveg"])
+print(data["Cards"][e]["szint"])
+print (data["Cards"][e]["szöveg"])
 szint = int(input("Szint: ")) 
-if szint != data["Cards"][e-1]["akció"]["ugrás"]:
+if szint != data["Cards"][e]["akció"]["ugrás"]:
     halál(vege)
 else:
     
@@ -128,14 +128,14 @@ else:
     e = szint
    
 
-    if data["Cards"][e-1]["akció"]["tipus"] =="halál":
+    if data["Cards"][e]["akció"]["tipus"] =="halál":
         halál(vege)
         break
 
-    if data["Cards"][e-1]["akció"]["tipus"] =="ugrás":
-        ugrasss= data["Cards"][e-1]["akció"]["ugrás"]
+    if data["Cards"][e]["akció"]["tipus"] =="ugrás":
+        ugrasss= data["Cards"][e]["akció"]["ugrás"]
         print(f'merre mész tovább {ugrasss}')
-        print(data["Cards"][e-1]["szöveg"])
+        print(data["Cards"][e]["szöveg"])
         print(f'amerre tovább mehetsz: {ugrasss}')
         tszint= int (input("Melyikre mész tovább?")) #tszint talán szint azt ellenőrzi hogy van e olyan szint a listában
         if vane(ugrasss,tszint)== True:
@@ -144,15 +144,15 @@ else:
             print("nincs ilyen szint")
             halál(vege)
 
-    if data["Cards"][e-1]["akció"]["tipus"] =="harc":
-        print (data["Cards"][e-1]["szöveg"])
-        harc(Tomó, data["Cards"][e-1]["akció"]["harc"])
+    if data["Cards"][e]["akció"]["tipus"] =="harc":
+        print (data["Cards"][e]["szöveg"])
+        harc(Tomó, data["Cards"][e]["akció"]["harc"])
         continue
 
     if data[e-1]["akció"]["választás"]:
-        ugrasss= data[e-1]["akció"]["ugrás"]
+        ugrasss= data[e]["akció"]["ugrás"]
         print(f'merre mész tovább {ugrasss}')
-        print (data["Cards"][e-1]["szöveg"])
+        print (data["Cards"][e]["szöveg"])
         tszint= int (input("Melyikre mész tovább?")) #tszint talán szint azt ellenőrzi hogy van e olyan szint a listában
         if vane(tszint,ugrasss)== True:
             szint = tszint
@@ -161,51 +161,51 @@ else:
             continue
 
     if data["Cards"][e-1]["akció"]["tipus"]=="luckválasztás":
-        print (data["Cards"][e-1]["szöveg"])
+        print (data["Cards"][e]["szöveg"])
         if probaszerencse() == True:
-            szint= data["Cards"][e-1]["akció"]["ugrás"][0]
+            szint= data["Cards"][e]["akció"]["ugrás"][0]
         else:
-            szint= data["Cards"][e-1]["akció"]["ugrás"][1]
+            szint= data["Cards"][e]["akció"]["ugrás"][1]
     
-    if data["Cards"][e-1]["akció"]["tipus"]=="győzelem":
+    if data["Cards"][e]["akció"]["tipus"]=="győzelem":
         print("Győztél!!! nyisd meg ezt a linket")
         print("https://media.giphy.com/media/ZcUGu59vhBGgbBhh0n/giphy.gif")
 
-    if data["Cards"][e-1]["akció"]["tipus"]=="tválasztás":
-        print (data["Cards"][e-1]["szöveg"])
-        if vane(data["Cards"][e-1]["akció"]["tárgyválasztaás"],inventory)== False:
-            tszint = data["Cards"][e-1]["akció"]["ugrás"][0]
+    if data["Cards"][e]["akció"]["tipus"]=="tválasztás":
+        print (data["Cards"][e]["szöveg"])
+        if vane(data["Cards"][e]["akció"]["tárgyválasztaás"],inventory)== False:
+            tszint = data["Cards"][e]["akció"]["ugrás"][0]
 
         else:
-            tszint = data["Cards"][e-1]["akció"]["ugrás"][1]
+            tszint = data["Cards"][e]["akció"]["ugrás"][1]
             continue
 
-    if data["Cards"][e-1]["akció"]=="minushp":
+    if data["Cards"][e]["akció"]=="minushp":
         minushp()
 
-    if data["Cards"][e-1]["akció"]== "plushp":
+    if data["Cards"][e]["akció"]== "plushp":
          plushp()
 
-    if data["Cards"][e-1]["akció"] == "minusluck":
+    if data["Cards"][e]["akció"] == "minusluck":
          minusluck()
     
-    if data["Cards"][e-1]["akció"] == "minussebzés":
+    if data["Cards"][e]["akció"] == "minussebzés":
          minussebz()
 
-    if data["Cards"][e-1]["akció"] == "harc2":
+    if data["Cards"][e]["akció"] == "harc2":
         sebzesplus()
-        harc(Tomó, data["Cards"][e-1]["akció"]["ellenfél"][0])
-        harc(Tomó, data["Cards"][e-1]["akció"]["ellenfél"][1])
+        harc(Tomó, data["Cards"][e]["akció"]["ellenfél"][0])
+        harc(Tomó, data["Cards"][e]["akció"]["ellenfél"][1])
                                      
-    if data["Cards"][e-1]["akció"] == "harc3":
-        harc(Tomó,data["Cards"][e-1]["akció"]["ellenfél"][0])
-        harc(Tomó,data["Cards"][e-1]["akció"]["ellenfél"][1])
+    if data["Cards"][e]["akció"] == "harc3":
+        harc(Tomó,data["Cards"][e]["akció"]["ellenfél"][0])
+        harc(Tomó,data["Cards"][e]["akció"]["ellenfél"][1])
 
 
-    if data["Cards"][e-1]["akció"] == "fix":
+    if data["Cards"][e]["akció"] == "fix":
         fix()
 
-    
+
 
     
 
