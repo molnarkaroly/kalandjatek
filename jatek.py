@@ -15,8 +15,6 @@ with open('szöveg.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 
-e = 1
-
 vege = False
 
 #cim = data["Cards"]["cim"]
@@ -29,13 +27,9 @@ def DoboKocka():
     dobas = random.randint(1,6)
     return dobas
 
-inventory= ['Vaskard', 'Bőrvért']
-arany= 0
-liquid= 5
-csillogo= 1
-kaja= 5
+
 class Harcos:
-    def __init__(self, nev): #ugyesseg, eletero, szerencse, depresszio, inventory, arany, liquid, csillogo, kaja
+    def __init__(self, nev,inventory= ['Vaskard', 'Bőrvért'],arany= 0,liquid= 5,csillogo= 1,kaja= 5): #ugyesseg, eletero, szerencse, depresszio, inventory, arany, liquid, csillogo, kaja
         self.nev = nev
         self.ugyesseg = DoboKocka() + 6
         self.eletero = DoboKocka() + DoboKocka() + 12
@@ -46,31 +40,10 @@ class Harcos:
         self.liquid = liquid
         self.csillogo = csillogo
         self.kaja = kaja 
-
+        self.sebez = 2
 
     
 Tomó= Harcos("Tomó")
-
-
-"""
-def ugyessegm(self):
-        e = szint
-        self.ugyesseg = self.ugyesseg 
-
-def ugyesseg1(self): 
-        self.ugyesseg = self.ugyesseg + ugyesseg1
-
-
-def ugyessegn(self):
-        self.ugyesseg = self.ugyesseg + ugyessegn
-def ugyesseg2(self):
-        self.ugyesseg = self.ugyesseg + ugyesseg2
-
-def eleterom(self):
-        self.eletero = self.eletero + eleterom
-def eletero1(self):
-        self.eletero = self.eletero + eletero1
-"""
 
 def minushp(self):
         self.eletero = self.eletero - data["Cards"][e-1]["akció"]["minushp"]
@@ -80,6 +53,8 @@ def plushp(self):
 
 def minusluck(self):
         self.szerencse = self.szerencse - data["Cards"][e-1]["akció"]["minusluck"]
+def minussebz(self):
+        self.szerencse = self.sebezés- data["Cards"][e-1]["akció"]["minussebzés"]
 
 def sebzesplus(sebzes):
     return 3
@@ -112,10 +87,9 @@ def halál(vege):
    print(" Játékod itt véget ért meghaltál XDDDDDDDDDDDD (bibis lett az ujjad és meghaltál) ")
    return  True
 
-def harc(self, enemy):
+def harc(self, enemy=Enemy):
         while self.health > 0 and enemy.health > 0:
-            sebzes = 2
-            enemy.health -= sebzes
+            enemy.health -= self.sebzes
             if enemy.health <= 0:
                 print(f"{self.name} nyert a harcban.")
                 szoveg = (f'1: {"ugras"[1]}')
@@ -215,6 +189,9 @@ else:
     if data["Cards"][e-1]["akció"] == "minusluck":
          minusluck()
     
+    if data["Cards"][e-1]["akció"] == "minussebzés":
+         minussebz()
+
     if data["Cards"][e-1]["akció"] == "harc2":
         sebzesplus()
         harc(Tomó, data["Cards"][e-1]["akció"]["ellenfél"][0])

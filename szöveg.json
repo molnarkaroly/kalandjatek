@@ -10,7 +10,7 @@
         "szöveg" : "Belöknek a lenti alagútba, és rád zárják az ajtót, kizárva ezzel a nyíláson át beszűrődő természetes világosságot. Innentől kezdve kizárólag a falra rögzített fäklyáktól remél- hetsz valamennyi fényt. Ahogy szemed hozzászokik a homályhoz, látod, hogy az alagút észak felé indul. Nagyot sóhajtasz a dolog igazságtalansága felett, majd elindulsz abba az irányba. Lapozz a 41-re.",
         "akció" : {
             "tipus": "ugrás",
-            "ugrás" : 41
+            "ugrás" : [41]
         }
     },
     {
@@ -399,7 +399,7 @@
         "szöveg" : "A növénykének valóban mágikus gyógyító tulajdonsága van, és még szerencsét is hoz. Nyersz 4 ÉLETERŐ pontot, SZERENCSE pontjaid pedig mostantól kezdve nem fognak 6 alá menni. Az északi ajtón át távozol. Lapozz a 152-re.",
         "akció" : {
             "tipus": "ugrás",
-            "elet+" : 4,
+            "plushp" : 4,
             "fix" : "A szerencséd mostantól nem mehet 6 alá",
             "ugrás" : [152]
         }
@@ -1641,7 +1641,7 @@
         "szint" : 200,
         "szöveg" : "Az odafonn álló Elfek serege várakozóan néz rád, (jaikat megfeszítve tartják maguk előtt, egyenesen rád célozva. A Főnök fia előre lép és kérdően az öregre tekint, aki alig észrevehetően bólint. Az ifjú kifejezés- telen arccal feléd fordul. Ember, ártat- lannak ítéltettél, így szabadon távozhatsz. Megtarthatsz bármit, amit az ítélet Labirin- tusában találtál. Távozz. - Kábán lépsz le az emelvényről. Az Elfek utat nyitnak neked, miközben elhaladsz mellettük. Mikor végre nyílt terepre érsz, megfordulsz és leg- nagyobb meglepetésedre már csak az öreget látod. Búcsúzóul feléd biccent, a következő pillanatban pedig a szemed előtt oszlik szét ragyogó fénnyé. Vállat vonsz és folytatod a hosszú sétautat Zafirvárosba.",
         "akció" : {
-            "tipus": "gyöz"
+            "tipus": "győzelem"
         }
     }]
 }
