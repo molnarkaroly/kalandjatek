@@ -85,7 +85,6 @@ def sebzesplus(sebzes):
     return 3
 
 def fix(self):
-        if fix == True:
             self.szerencse < 6
             self.szerencse = 6
 
@@ -226,9 +225,10 @@ else:
         harc(Tomó,data["Cards"][e-1]["akció"]["ellenfél"][1])
 
 
+    if data["Cards"][e-1]["akció"] == "fix":
+        fix()
 
-
-
+    
 
     
 
