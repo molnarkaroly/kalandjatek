@@ -16,18 +16,19 @@ with open('szöveg.json', 'r', encoding='utf-8') as f:
 
 
 vege = False
-
-#cim = data["Cards"]["cim"]
-#bevezeto = data["Cards"]["bevezeto"]
-#ugrasss = data["Cards"][0]["szoveg"]
-#akcio = data["Cards"][e]['akcio']
-#print(akcio)
+"""
+cim = data["Cards"]["cim"]
+bevezeto = data["Cards"]["bevezeto"]
+ugrasss = data["Cards"][0]["szoveg"]
+akcio = data["Cards"][e]['akcio']
+print(akcio)
+"""
 
 def DoboKocka():
     dobas = random.randint(1,6)
     return dobas
 
-
+inventory= ['Vaskard', 'Bőrvért']
 class Harcos:
     def __init__(self, nev,inventory= ['Vaskard', 'Bőrvért'],arany= 0,liquid= 5,csillogo= 1,kaja= 5): #ugyesseg, eletero, szerencse, depresszio, inventory, arany, liquid, csillogo, kaja
         self.nev = nev
@@ -142,7 +143,6 @@ else:
             szint = tszint
         else:
             print("nincs ilyen szint")
-            halál(vege)
 
     if data["Cards"][e]["akció"]["tipus"] =="harc":
         print (data["Cards"][e]["szöveg"])
@@ -158,7 +158,7 @@ else:
             szint = tszint
         else:
             print("nincs ilyen szint")
-            continue
+            halál(vege)
 
     if data["Cards"][e-1]["akció"]["tipus"]=="luckválasztás":
         print (data["Cards"][e]["szöveg"])
