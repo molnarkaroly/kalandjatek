@@ -29,10 +29,10 @@ def DoboKocka():
 
 
 class Harcos:
-    def __init__(self, nev,inventory= ['Vaskard', 'Bőrvért'],arany= 0,liquid= 5,csillogo= 1,kaja= 5): #ugyesseg, eletero, szerencse, depresszio, inventory, arany, liquid, csillogo, kaja
+    def __init__(self, nev, inventory= ['Vaskard', 'Bőrvért'],arany= 0,liquid= 5,csillogo= 1,kaja= 5):
         self.nev = nev
+        self.health = DoboKocka() + DoboKocka() + 12
         self.ugyesseg = DoboKocka() + 6
-        self.eletero = DoboKocka() + DoboKocka() + 12
         self.szerencse = DoboKocka() + 6
         self.depresszio = 0
         self.inventory = inventory
@@ -68,10 +68,10 @@ def fix(self):
 
 
 class Enemy:
-    def __init__(self, nev, ugyesseg, eletero, sebzes = 2):
+    def __init__(self, nev, ugyesseg, health, sebzes = 2):
         self.name = data["Cards"][e-1]["akció"]["ellenfél"][0]
         self.ugyesseg = data["Cards"][e-1]["akció"]["ellenfél"][1]
-        self.eletero =  data["Cards"][e-1]["akció"]["ellenfél"][2]
+        self.health =  data["Cards"][e-1]["akció"]["ellenfél"][2]
         self.sebzes = sebzes
 
 
@@ -88,19 +88,19 @@ def halál(vege):
    return  True
 
 def harc(self, enemy=Enemy):
-        while self.health > 0 and enemy.health > 0:
-            enemy.health -= self.sebzes
-            if enemy.health <= 0:
-                print(f"{self.name} nyert a harcban.")
-                szoveg = (f'1: {"ugras"[1]}')
-                if len('ugras') > 1:
-                    szoveg = (f'1: {data["ugras"][1]} 2:{ ["ugras"][2]}' )
-                break
-            self.health -= enemy.sebzes
-            if self.health <= 0:
-                print(f"{enemy.name} nyert játékod is véget ért")
-                szoveg = (f"{enemy.name} nyert játékod is véget ért")
-                break   
+    while self.health > 0 and enemy.health > 0:
+        enemy.health -= self.sebzes
+        if enemy.health <= 0:
+            print(f"{self.name} nyert a harcban.")
+            szoveg = (f'1: {"ugras"[1]}')
+            if len('ugras') > 1:
+                szoveg = (f'1: {data["ugras"][1]} 2:{ ["ugras"][2]}' )
+            break
+        self.health -= enemy.sebzes
+        if self.health <= 0:
+            print(f"{enemy.name} nyert játékod is véget ért")
+            szoveg = (f"{enemy.name} nyert játékod is véget ért")
+            break   
 
 def probaszerencse(Tomó, szerencse):
     if DoboKocka() + DoboKocka() <= Tomó.szerencse:
@@ -117,8 +117,7 @@ print(data["Cards"][e]["szint"])
 print (data["Cards"][e]["szöveg"])
 szint = int(input("Szint: ")) 
 if szint != data["Cards"][e]["akció"]["ugrás"]:
-    halál(vege)
-else:
+
     
  szint = e
 
@@ -140,13 +139,14 @@ else:
         tszint= int (input("Melyikre mész tovább?")) #tszint talán szint azt ellenőrzi hogy van e olyan szint a listában
         if vane(ugrasss,tszint)== True:
             szint = tszint
+            e = szint
         else:
             print("nincs ilyen szint")
             halál(vege)
 
     if data["Cards"][e]["akció"]["tipus"] =="harc":
         print (data["Cards"][e]["szöveg"])
-        harc(Tomó, data["Cards"][e]["akció"]["harc"])
+        harc(Tomó, data["Cards"][e]["akció"]["ellenfél"])
         continue
 
     if data[e-1]["akció"]["választás"]:
