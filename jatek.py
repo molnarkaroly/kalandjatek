@@ -30,7 +30,7 @@ def DoboKocka():
 
 inventory= ['Vaskard', 'Bőrvért']
 class Harcos:
-    def __init__(self, nev, inventory= ['Vaskard', 'Bőrvért'],arany= 0,liquid= 5,csillogo= 1,kaja= 5):
+    def __init__(self, nev, health, ugyesseg, szerencse, inventory= ['Vaskard', 'Bőrvért'],arany= 0,liquid= 5,csillogo= 1,kaja= 5):
         self.nev = nev
         self.health = DoboKocka() + DoboKocka() + 12
         self.ugyesseg = DoboKocka() + 6
@@ -42,9 +42,31 @@ class Harcos:
         self.csillogo = csillogo
         self.kaja = kaja 
         self.sebez = 2
+        
+    def harc(self, enemy):
+        while self.health > 0 and enemy.health > 0:
+            enemy.health -= self.sebzes
+            if enemy.health <= 0:
+                print(f"{self.name} nyert a harcban.")
+                szoveg = (f'1: {"ugras"[1]}')
+                if len('ugras') > 1:
+                    szoveg = (f'1: {data["ugras"][1]} 2:{ ["ugras"][2]}' )
+                break
+            self.health -= enemy.sebzes
+            if self.health <= 0:
+                print(f"{enemy.name} nyert játékod is véget ért")
+                szoveg = (f"{enemy.name} nyert játékod is véget ért")
+                break   
 
-    
-Tomó= Harcos("Tomó")
+class Enemy:
+    def __init__(self, nev, ugyesseg, health, sebzes = 2):
+        self.name = data["Cards"][e]["akció"]["ellenfél"][0]
+        self.ugyesseg = data["Cards"][e]["akció"]["ellenfél"][1]
+        self.health =  data["Cards"][e]["akció"]["ellenfél"][2]
+        self.sebzes = sebzes
+
+
+Tomó= Harcos("Tomó", 0, 12, 12)
 
 def minushp(self):
         self.eletero = self.eletero - data["Cards"][e-1]["akció"]["minushp"]
@@ -64,19 +86,6 @@ def fix(self):
             self.szerencse < 6
             self.szerencse = 6
 
-
-
-
-
-class Enemy:
-    def __init__(self, nev, ugyesseg, health, sebzes = 2):
-        self.name = data["Cards"][e-1]["akció"]["ellenfél"][0]
-        self.ugyesseg = data["Cards"][e-1]["akció"]["ellenfél"][1]
-        self.health =  data["Cards"][e-1]["akció"]["ellenfél"][2]
-        self.sebzes = sebzes
-
-
-
 def vane(ebben,ez):
     for i in (ebben):
         if ez == i:
@@ -85,23 +94,8 @@ def vane(ebben,ez):
             return False
         
 def halál(vege):
-   print(" Játékod itt véget ért meghaltál XDDDDDDDDDDDD (bibis lett az ujjad és meghaltál) ")
+   print(" Játékod itt véget ért meghaltál. (bibis lett az ujjad és meghaltál) ")
    return  True
-
-def harc(self, enemy=Enemy):
-    while self.health > 0 and enemy.health > 0:
-        enemy.health -= self.sebzes
-        if enemy.health <= 0:
-            print(f"{self.name} nyert a harcban.")
-            szoveg = (f'1: {"ugras"[1]}')
-            if len('ugras') > 1:
-                szoveg = (f'1: {data["ugras"][1]} 2:{ ["ugras"][2]}' )
-            break
-        self.health -= enemy.sebzes
-        if self.health <= 0:
-            print(f"{enemy.name} nyert játékod is véget ért")
-            szoveg = (f"{enemy.name} nyert játékod is véget ért")
-            break   
 
 def probaszerencse(Tomó, szerencse):
     if DoboKocka() + DoboKocka() <= Tomó.szerencse:
@@ -146,7 +140,7 @@ if szint != data["Cards"][e]["akció"]["ugrás"]:
 
     if data["Cards"][e]["akció"]["tipus"] =="harc":
         print (data["Cards"][e]["szöveg"])
-        harc(Tomó, data["Cards"][e]["akció"]["ellenfél"])
+        Tomó.harc(Enemy)
         continue
 
     if data[e-1]["akció"]["választás"]:
@@ -194,12 +188,12 @@ if szint != data["Cards"][e]["akció"]["ugrás"]:
 
     if data["Cards"][e]["akció"] == "harc2":
         sebzesplus()
-        harc(Tomó, data["Cards"][e]["akció"]["ellenfél"][0])
-        harc(Tomó, data["Cards"][e]["akció"]["ellenfél"][1])
+        Tomó.harc(data["Cards"][e]["akció"]["ellenfél"][0])
+        Tomó.harc(data["Cards"][e]["akció"]["ellenfél"][1])
                                      
     if data["Cards"][e]["akció"] == "harc3":
-        harc(Tomó,data["Cards"][e]["akció"]["ellenfél"][0])
-        harc(Tomó,data["Cards"][e]["akció"]["ellenfél"][1])
+        Tomó.harc(data["Cards"][e]["akció"]["ellenfél"][0])
+        Tomó.harc(data["Cards"][e]["akció"]["ellenfél"][1])
 
 
     if data["Cards"][e]["akció"] == "fix":
